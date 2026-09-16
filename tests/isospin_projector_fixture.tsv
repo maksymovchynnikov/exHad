@@ -1,0 +1,428 @@
+# state	2I	2I3	P_exact  (P(total isospin I | product state), exact fractions)
+pi- pi-	0	-4	0/1
+pi- pi-	2	-4	0/1
+pi- pi-	4	-4	1/1
+pi- pi0	0	-2	0/1
+pi- pi0	2	-2	1/2
+pi- pi0	4	-2	1/2
+pi0 pi0	0	0	1/3
+pi0 pi0	2	0	0/1
+pi0 pi0	4	0	2/3
+pi- pi+	0	0	1/3
+pi- pi+	2	0	1/2
+pi- pi+	4	0	1/6
+pi0 pi+	0	2	0/1
+pi0 pi+	2	2	1/2
+pi0 pi+	4	2	1/2
+pi+ pi+	0	4	0/1
+pi+ pi+	2	4	0/1
+pi+ pi+	4	4	1/1
+pi- pi- pi-	0	-6	0/1
+pi- pi- pi-	2	-6	0/1
+pi- pi- pi-	4	-6	0/1
+pi- pi- pi0	0	-4	0/1
+pi- pi- pi0	2	-4	0/1
+pi- pi- pi0	4	-4	2/3
+pi- pi0 pi0	0	-2	0/1
+pi- pi0 pi0	2	-2	2/5
+pi- pi0 pi0	4	-2	1/3
+pi0 pi0 pi0	0	0	0/1
+pi0 pi0 pi0	2	0	3/5
+pi0 pi0 pi0	4	0	0/1
+pi- pi- pi+	0	-2	0/1
+pi- pi- pi+	2	-2	3/5
+pi- pi- pi+	4	-2	1/3
+pi- pi0 pi+	0	0	1/6
+pi- pi0 pi+	2	0	2/5
+pi- pi0 pi+	4	0	1/3
+pi0 pi0 pi+	0	2	0/1
+pi0 pi0 pi+	2	2	2/5
+pi0 pi0 pi+	4	2	1/3
+pi- pi+ pi+	0	2	0/1
+pi- pi+ pi+	2	2	3/5
+pi- pi+ pi+	4	2	1/3
+pi0 pi+ pi+	0	4	0/1
+pi0 pi+ pi+	2	4	0/1
+pi0 pi+ pi+	4	4	2/3
+pi+ pi+ pi+	0	6	0/1
+pi+ pi+ pi+	2	6	0/1
+pi+ pi+ pi+	4	6	0/1
+pi- pi- pi- pi-	0	-8	0/1
+pi- pi- pi- pi-	2	-8	0/1
+pi- pi- pi- pi-	4	-8	0/1
+pi- pi- pi- pi0	0	-6	0/1
+pi- pi- pi- pi0	2	-6	0/1
+pi- pi- pi- pi0	4	-6	0/1
+pi- pi- pi0 pi0	0	-4	0/1
+pi- pi- pi0 pi0	2	-4	0/1
+pi- pi- pi0 pi0	4	-4	11/21
+pi- pi0 pi0 pi0	0	-2	0/1
+pi- pi0 pi0 pi0	2	-2	3/10
+pi- pi0 pi0 pi0	4	-2	5/14
+pi0 pi0 pi0 pi0	0	0	1/5
+pi0 pi0 pi0 pi0	2	0	0/1
+pi0 pi0 pi0 pi0	4	0	4/7
+pi- pi- pi- pi+	0	-4	0/1
+pi- pi- pi- pi+	2	-4	0/1
+pi- pi- pi- pi+	4	-4	5/7
+pi- pi- pi0 pi+	0	-2	0/1
+pi- pi- pi0 pi+	2	-2	2/5
+pi- pi- pi0 pi+	4	-2	8/21
+pi- pi0 pi0 pi+	0	0	2/15
+pi- pi0 pi0 pi+	2	0	3/10
+pi- pi0 pi0 pi+	4	0	13/42
+pi0 pi0 pi0 pi+	0	2	0/1
+pi0 pi0 pi0 pi+	2	2	3/10
+pi0 pi0 pi0 pi+	4	2	5/14
+pi- pi- pi+ pi+	0	0	1/5
+pi- pi- pi+ pi+	2	0	2/5
+pi- pi- pi+ pi+	4	0	2/7
+pi- pi0 pi+ pi+	0	2	0/1
+pi- pi0 pi+ pi+	2	2	2/5
+pi- pi0 pi+ pi+	4	2	8/21
+pi0 pi0 pi+ pi+	0	4	0/1
+pi0 pi0 pi+ pi+	2	4	0/1
+pi0 pi0 pi+ pi+	4	4	11/21
+pi- pi+ pi+ pi+	0	4	0/1
+pi- pi+ pi+ pi+	2	4	0/1
+pi- pi+ pi+ pi+	4	4	5/7
+pi0 pi+ pi+ pi+	0	6	0/1
+pi0 pi+ pi+ pi+	2	6	0/1
+pi0 pi+ pi+ pi+	4	6	0/1
+pi+ pi+ pi+ pi+	0	8	0/1
+pi+ pi+ pi+ pi+	2	8	0/1
+pi+ pi+ pi+ pi+	4	8	0/1
+pi- pi- pi- pi- pi-	0	-10	0/1
+pi- pi- pi- pi- pi-	2	-10	0/1
+pi- pi- pi- pi- pi-	4	-10	0/1
+pi- pi- pi- pi- pi0	0	-8	0/1
+pi- pi- pi- pi- pi0	2	-8	0/1
+pi- pi- pi- pi- pi0	4	-8	0/1
+pi- pi- pi- pi0 pi0	0	-6	0/1
+pi- pi- pi- pi0 pi0	2	-6	0/1
+pi- pi- pi- pi0 pi0	4	-6	0/1
+pi- pi- pi0 pi0 pi0	0	-4	0/1
+pi- pi- pi0 pi0 pi0	2	-4	0/1
+pi- pi- pi0 pi0 pi0	4	-4	3/7
+pi- pi0 pi0 pi0 pi0	0	-2	0/1
+pi- pi0 pi0 pi0 pi0	2	-2	9/35
+pi- pi0 pi0 pi0 pi0	4	-2	2/7
+pi0 pi0 pi0 pi0 pi0	0	0	0/1
+pi0 pi0 pi0 pi0 pi0	2	0	3/7
+pi0 pi0 pi0 pi0 pi0	4	0	0/1
+pi- pi- pi- pi- pi+	0	-6	0/1
+pi- pi- pi- pi- pi+	2	-6	0/1
+pi- pi- pi- pi- pi+	4	-6	0/1
+pi- pi- pi- pi0 pi+	0	-4	0/1
+pi- pi- pi- pi0 pi+	2	-4	0/1
+pi- pi- pi- pi0 pi+	4	-4	15/28
+pi- pi- pi0 pi0 pi+	0	-2	0/1
+pi- pi- pi0 pi0 pi+	2	-2	11/35
+pi- pi- pi0 pi0 pi+	4	-2	1/3
+pi- pi0 pi0 pi0 pi+	0	0	1/10
+pi- pi0 pi0 pi0 pi+	2	0	9/35
+pi- pi0 pi0 pi0 pi+	4	0	2/7
+pi0 pi0 pi0 pi0 pi+	0	2	0/1
+pi0 pi0 pi0 pi0 pi+	2	2	9/35
+pi0 pi0 pi0 pi0 pi+	4	2	2/7
+pi- pi- pi- pi+ pi+	0	-2	0/1
+pi- pi- pi- pi+ pi+	2	-2	3/7
+pi- pi- pi- pi+ pi+	4	-2	5/14
+pi- pi- pi0 pi+ pi+	0	0	2/15
+pi- pi- pi0 pi+ pi+	2	0	11/35
+pi- pi- pi0 pi+ pi+	4	0	13/42
+pi- pi0 pi0 pi+ pi+	0	2	0/1
+pi- pi0 pi0 pi+ pi+	2	2	11/35
+pi- pi0 pi0 pi+ pi+	4	2	1/3
+pi0 pi0 pi0 pi+ pi+	0	4	0/1
+pi0 pi0 pi0 pi+ pi+	2	4	0/1
+pi0 pi0 pi0 pi+ pi+	4	4	3/7
+pi- pi- pi+ pi+ pi+	0	2	0/1
+pi- pi- pi+ pi+ pi+	2	2	3/7
+pi- pi- pi+ pi+ pi+	4	2	5/14
+pi- pi0 pi+ pi+ pi+	0	4	0/1
+pi- pi0 pi+ pi+ pi+	2	4	0/1
+pi- pi0 pi+ pi+ pi+	4	4	15/28
+pi0 pi0 pi+ pi+ pi+	0	6	0/1
+pi0 pi0 pi+ pi+ pi+	2	6	0/1
+pi0 pi0 pi+ pi+ pi+	4	6	0/1
+pi- pi+ pi+ pi+ pi+	0	6	0/1
+pi- pi+ pi+ pi+ pi+	2	6	0/1
+pi- pi+ pi+ pi+ pi+	4	6	0/1
+pi0 pi+ pi+ pi+ pi+	0	8	0/1
+pi0 pi+ pi+ pi+ pi+	2	8	0/1
+pi0 pi+ pi+ pi+ pi+	4	8	0/1
+pi+ pi+ pi+ pi+ pi+	0	10	0/1
+pi+ pi+ pi+ pi+ pi+	2	10	0/1
+pi+ pi+ pi+ pi+ pi+	4	10	0/1
+pi- pi- pi- pi- pi- pi-	0	-12	0/1
+pi- pi- pi- pi- pi- pi-	2	-12	0/1
+pi- pi- pi- pi- pi- pi-	4	-12	0/1
+pi- pi- pi- pi- pi- pi0	0	-10	0/1
+pi- pi- pi- pi- pi- pi0	2	-10	0/1
+pi- pi- pi- pi- pi- pi0	4	-10	0/1
+pi- pi- pi- pi- pi0 pi0	0	-8	0/1
+pi- pi- pi- pi- pi0 pi0	2	-8	0/1
+pi- pi- pi- pi- pi0 pi0	4	-8	0/1
+pi- pi- pi- pi0 pi0 pi0	0	-6	0/1
+pi- pi- pi- pi0 pi0 pi0	2	-6	0/1
+pi- pi- pi- pi0 pi0 pi0	4	-6	0/1
+pi- pi- pi0 pi0 pi0 pi0	0	-4	0/1
+pi- pi- pi0 pi0 pi0 pi0	2	-4	0/1
+pi- pi- pi0 pi0 pi0 pi0	4	-4	23/63
+pi- pi0 pi0 pi0 pi0 pi0	0	-2	0/1
+pi- pi0 pi0 pi0 pi0 pi0	2	-2	3/14
+pi- pi0 pi0 pi0 pi0 pi0	4	-2	5/18
+pi0 pi0 pi0 pi0 pi0 pi0	0	0	1/7
+pi0 pi0 pi0 pi0 pi0 pi0	2	0	0/1
+pi0 pi0 pi0 pi0 pi0 pi0	4	0	10/21
+pi- pi- pi- pi- pi- pi+	0	-8	0/1
+pi- pi- pi- pi- pi- pi+	2	-8	0/1
+pi- pi- pi- pi- pi- pi+	4	-8	0/1
+pi- pi- pi- pi- pi0 pi+	0	-6	0/1
+pi- pi- pi- pi- pi0 pi+	2	-6	0/1
+pi- pi- pi- pi- pi0 pi+	4	-6	0/1
+pi- pi- pi- pi0 pi0 pi+	0	-4	0/1
+pi- pi- pi- pi0 pi0 pi+	2	-4	0/1
+pi- pi- pi- pi0 pi0 pi+	4	-4	55/126
+pi- pi- pi0 pi0 pi0 pi+	0	-2	0/1
+pi- pi- pi0 pi0 pi0 pi+	2	-2	9/35
+pi- pi- pi0 pi0 pi0 pi+	4	-2	19/63
+pi- pi0 pi0 pi0 pi0 pi+	0	0	3/35
+pi- pi0 pi0 pi0 pi0 pi+	2	0	3/14
+pi- pi0 pi0 pi0 pi0 pi+	4	0	11/42
+pi0 pi0 pi0 pi0 pi0 pi+	0	2	0/1
+pi0 pi0 pi0 pi0 pi0 pi+	2	2	3/14
+pi0 pi0 pi0 pi0 pi0 pi+	4	2	5/18
+pi- pi- pi- pi- pi+ pi+	0	-4	0/1
+pi- pi- pi- pi- pi+ pi+	2	-4	0/1
+pi- pi- pi- pi- pi+ pi+	4	-4	5/9
+pi- pi- pi- pi0 pi+ pi+	0	-2	0/1
+pi- pi- pi- pi0 pi+ pi+	2	-2	9/28
+pi- pi- pi- pi0 pi+ pi+	4	-2	85/252
+pi- pi- pi0 pi0 pi+ pi+	0	0	11/105
+pi- pi- pi0 pi0 pi+ pi+	2	0	9/35
+pi- pi- pi0 pi0 pi+ pi+	4	0	2/7
+pi- pi0 pi0 pi0 pi+ pi+	0	2	0/1
+pi- pi0 pi0 pi0 pi+ pi+	2	2	9/35
+pi- pi0 pi0 pi0 pi+ pi+	4	2	19/63
+pi0 pi0 pi0 pi0 pi+ pi+	0	4	0/1
+pi0 pi0 pi0 pi0 pi+ pi+	2	4	0/1
+pi0 pi0 pi0 pi0 pi+ pi+	4	4	23/63
+pi- pi- pi- pi+ pi+ pi+	0	0	1/7
+pi- pi- pi- pi+ pi+ pi+	2	0	9/28
+pi- pi- pi- pi+ pi+ pi+	4	0	25/84
+pi- pi- pi0 pi+ pi+ pi+	0	2	0/1
+pi- pi- pi0 pi+ pi+ pi+	2	2	9/28
+pi- pi- pi0 pi+ pi+ pi+	4	2	85/252
+pi- pi0 pi0 pi+ pi+ pi+	0	4	0/1
+pi- pi0 pi0 pi+ pi+ pi+	2	4	0/1
+pi- pi0 pi0 pi+ pi+ pi+	4	4	55/126
+pi0 pi0 pi0 pi+ pi+ pi+	0	6	0/1
+pi0 pi0 pi0 pi+ pi+ pi+	2	6	0/1
+pi0 pi0 pi0 pi+ pi+ pi+	4	6	0/1
+pi- pi- pi+ pi+ pi+ pi+	0	4	0/1
+pi- pi- pi+ pi+ pi+ pi+	2	4	0/1
+pi- pi- pi+ pi+ pi+ pi+	4	4	5/9
+pi- pi0 pi+ pi+ pi+ pi+	0	6	0/1
+pi- pi0 pi+ pi+ pi+ pi+	2	6	0/1
+pi- pi0 pi+ pi+ pi+ pi+	4	6	0/1
+pi0 pi0 pi+ pi+ pi+ pi+	0	8	0/1
+pi0 pi0 pi+ pi+ pi+ pi+	2	8	0/1
+pi0 pi0 pi+ pi+ pi+ pi+	4	8	0/1
+pi- pi+ pi+ pi+ pi+ pi+	0	8	0/1
+pi- pi+ pi+ pi+ pi+ pi+	2	8	0/1
+pi- pi+ pi+ pi+ pi+ pi+	4	8	0/1
+pi0 pi+ pi+ pi+ pi+ pi+	0	10	0/1
+pi0 pi+ pi+ pi+ pi+ pi+	2	10	0/1
+pi0 pi+ pi+ pi+ pi+ pi+	4	10	0/1
+pi+ pi+ pi+ pi+ pi+ pi+	0	12	0/1
+pi+ pi+ pi+ pi+ pi+ pi+	2	12	0/1
+pi+ pi+ pi+ pi+ pi+ pi+	4	12	0/1
+K- K+	0	0	1/2
+K- K+	2	0	1/2
+K0bar K0	0	0	1/2
+K0bar K0	2	0	1/2
+K0bar K+	0	2	0/1
+K0bar K+	2	2	1/1
+K- K0	0	-2	0/1
+K- K0	2	-2	1/1
+K- pi+ K+	0	2	0/1
+K- pi+ K+	2	2	3/4
+K- pi+ K+	4	2	1/4
+K- pi0 K+	0	0	1/6
+K- pi0 K+	2	0	1/2
+K- pi0 K+	4	0	1/3
+K- pi- K+	0	-2	0/1
+K- pi- K+	2	-2	3/4
+K- pi- K+	4	-2	1/4
+K0bar pi+ K0	0	2	0/1
+K0bar pi+ K0	2	2	3/4
+K0bar pi+ K0	4	2	1/4
+K0bar pi0 K0	0	0	1/6
+K0bar pi0 K0	2	0	1/2
+K0bar pi0 K0	4	0	1/3
+K0bar pi- K0	0	-2	0/1
+K0bar pi- K0	2	-2	3/4
+K0bar pi- K0	4	-2	1/4
+K0bar pi+ K+	0	4	0/1
+K0bar pi+ K+	2	4	0/1
+K0bar pi+ K+	4	4	1/1
+K0bar pi0 K+	0	2	0/1
+K0bar pi0 K+	2	2	1/2
+K0bar pi0 K+	4	2	1/2
+K0bar pi- K+	0	0	1/3
+K0bar pi- K+	2	0	1/2
+K0bar pi- K+	4	0	1/6
+K- pi+ K0	0	0	1/3
+K- pi+ K0	2	0	1/2
+K- pi+ K0	4	0	1/6
+K- pi0 K0	0	-2	0/1
+K- pi0 K0	2	-2	1/2
+K- pi0 K0	4	-2	1/2
+K- pi- K0	0	-4	0/1
+K- pi- K0	2	-4	0/1
+K- pi- K0	4	-4	1/1
+pi- pi+ eta	0	0	1/3
+pi- pi+ eta	2	0	1/2
+pi- pi+ eta	4	0	1/6
+pi0 pi0 eta	0	0	1/3
+pi0 pi0 eta	2	0	0/1
+pi0 pi0 eta	4	0	2/3
+pi0 pi+ eta	0	2	0/1
+pi0 pi+ eta	2	2	1/2
+pi0 pi+ eta	4	2	1/2
+pi- pi0 eta	0	-2	0/1
+pi- pi0 eta	2	-2	1/2
+pi- pi0 eta	4	-2	1/2
+pi- pi0 pi+ eta	0	0	1/6
+pi- pi0 pi+ eta	2	0	2/5
+pi- pi0 pi+ eta	4	0	1/3
+pi0 pi0 pi0 eta	0	0	0/1
+pi0 pi0 pi0 eta	2	0	3/5
+pi0 pi0 pi0 eta	4	0	0/1
+pi- pi0 pi0 eta	0	-2	0/1
+pi- pi0 pi0 eta	2	-2	2/5
+pi- pi0 pi0 eta	4	-2	1/3
+pi- pi- pi+ eta	0	-2	0/1
+pi- pi- pi+ eta	2	-2	3/5
+pi- pi- pi+ eta	4	-2	1/3
+pi- pi- pi+ pi+ eta	0	0	1/5
+pi- pi- pi+ pi+ eta	2	0	2/5
+pi- pi- pi+ pi+ eta	4	0	2/7
+pi- pi0 pi0 pi+ eta	0	0	2/15
+pi- pi0 pi0 pi+ eta	2	0	3/10
+pi- pi0 pi0 pi+ eta	4	0	13/42
+pi0 pi0 pi0 pi0 eta	0	0	1/5
+pi0 pi0 pi0 pi0 eta	2	0	0/1
+pi0 pi0 pi0 pi0 eta	4	0	4/7
+pi- pi+ eta'	0	0	1/3
+pi- pi+ eta'	2	0	1/2
+pi- pi+ eta'	4	0	1/6
+pi0 pi0 eta'	0	0	1/3
+pi0 pi0 eta'	2	0	0/1
+pi0 pi0 eta'	4	0	2/3
+pi0 pi+ eta'	0	2	0/1
+pi0 pi+ eta'	2	2	1/2
+pi0 pi+ eta'	4	2	1/2
+pi- pi0 eta'	0	-2	0/1
+pi- pi0 eta'	2	-2	1/2
+pi- pi0 eta'	4	-2	1/2
+pi- pi0 pi+ eta'	0	0	1/6
+pi- pi0 pi+ eta'	2	0	2/5
+pi- pi0 pi+ eta'	4	0	1/3
+pi0 pi0 pi0 eta'	0	0	0/1
+pi0 pi0 pi0 eta'	2	0	3/5
+pi0 pi0 pi0 eta'	4	0	0/1
+pi- pi0 pi0 eta'	0	-2	0/1
+pi- pi0 pi0 eta'	2	-2	2/5
+pi- pi0 pi0 eta'	4	-2	1/3
+pi- pi- pi+ eta'	0	-2	0/1
+pi- pi- pi+ eta'	2	-2	3/5
+pi- pi- pi+ eta'	4	-2	1/3
+pi- pi- pi+ pi+ eta'	0	0	1/5
+pi- pi- pi+ pi+ eta'	2	0	2/5
+pi- pi- pi+ pi+ eta'	4	0	2/7
+pi- pi0 pi0 pi+ eta'	0	0	2/15
+pi- pi0 pi0 pi+ eta'	2	0	3/10
+pi- pi0 pi0 pi+ eta'	4	0	13/42
+pi0 pi0 pi0 pi0 eta'	0	0	1/5
+pi0 pi0 pi0 pi0 eta'	2	0	0/1
+pi0 pi0 pi0 pi0 eta'	4	0	4/7
+pi- pi+ eta eta'	0	0	1/3
+pi- pi+ eta eta'	2	0	1/2
+pi- pi0 pi+ omega	0	0	1/6
+pi- pi0 pi+ omega	2	0	2/5
+pbar p	0	0	1/2
+pbar p	2	0	1/2
+nbar n	0	0	1/2
+nbar n	2	0	1/2
+nbar p	0	2	0/1
+nbar p	2	2	1/1
+pbar n	0	-2	0/1
+pbar n	2	-2	1/1
+pbar pi+ p	0	2	0/1
+pbar pi+ p	2	2	3/4
+pbar pi+ p	4	2	1/4
+pbar pi0 p	0	0	1/6
+pbar pi0 p	2	0	1/2
+pbar pi0 p	4	0	1/3
+pbar pi- p	0	-2	0/1
+pbar pi- p	2	-2	3/4
+pbar pi- p	4	-2	1/4
+nbar pi+ n	0	2	0/1
+nbar pi+ n	2	2	3/4
+nbar pi+ n	4	2	1/4
+nbar pi0 n	0	0	1/6
+nbar pi0 n	2	0	1/2
+nbar pi0 n	4	0	1/3
+nbar pi- n	0	-2	0/1
+nbar pi- n	2	-2	3/4
+nbar pi- n	4	-2	1/4
+nbar pi+ p	0	4	0/1
+nbar pi+ p	2	4	0/1
+nbar pi+ p	4	4	1/1
+nbar pi0 p	0	2	0/1
+nbar pi0 p	2	2	1/2
+nbar pi0 p	4	2	1/2
+nbar pi- p	0	0	1/3
+nbar pi- p	2	0	1/2
+nbar pi- p	4	0	1/6
+pbar pi+ n	0	0	1/3
+pbar pi+ n	2	0	1/2
+pbar pi+ n	4	0	1/6
+pbar pi0 n	0	-2	0/1
+pbar pi0 n	2	-2	1/2
+pbar pi0 n	4	-2	1/2
+pbar pi- n	0	-4	0/1
+pbar pi- n	2	-4	0/1
+pbar pi- n	4	-4	1/1
+pbar pi- pi+ p	0	0	1/4
+pbar pi- pi+ p	2	0	9/20
+pbar pi0 pi0 p	0	0	1/6
+pbar pi0 pi0 p	2	0	3/10
+pbar pi0 pi+ n	0	0	1/6
+pbar pi0 pi+ n	2	0	2/5
+pi- pi0 rho+	0	0	1/6
+pi- pi0 rho+	2	0	2/5
+pi- pi0 rho+	4	0	1/3
+pi- rho0 pi+	0	0	1/6
+pi- rho0 pi+	2	0	2/5
+pi- rho0 pi+	4	0	1/3
+rho- pi0 pi0	0	-2	0/1
+rho- pi0 pi0	2	-2	2/5
+rho- pi0 pi0	4	-2	1/3
+rho- pi0 rho+	0	0	1/6
+rho- pi0 rho+	2	0	2/5
+rho- pi0 rho+	4	0	1/3
+pbar pi- Delta++	0	0	1/4
+pbar pi- Delta++	2	0	9/20
+pbar pi- Delta++	4	0	1/4
+nbar pi+ Delta-	0	0	1/4
+nbar pi+ Delta-	2	0	9/20
+K- pi- pi+ K+	0	0	1/4
+K- pi- pi+ K+	2	0	9/20
+K- pi0 pi0 K+	0	0	1/6
+K- pi0 pi0 K+	2	0	3/10
+K- pi0 pi+ K0	0	0	1/6
+K- pi0 pi+ K0	2	0	2/5

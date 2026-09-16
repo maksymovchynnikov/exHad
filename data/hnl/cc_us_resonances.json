@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "HNL Cabibbo-suppressed (us-bar) CC channels: the tau",
+    "strange width (~2.9% of the hadronic total) is resonance-dominated",
+    "and is carried by exclusive electroweak modes, NOT by the string.",
+    "br_tau = measured tau^- -> X^- nu branching ratios (PDG); for the",
+    "HNL these scale with the same master substitution as the J=1",
+    "continuum restricted to the pole,",
+    "or equivalently through the standard f_K / f_K* / f_K1 decay-",
+    "constant formulas already present in HNL width codes.",
+    "K1 split per PDG tau -> K1(1270)/K1(1400) analyses.",
+    "Kaon-pole (J=0) and K*(892) (J=1 vector) are usually already",
+    "exclusive channels in EventCalc; K1 modes (J=1 axial, K pi pi)",
+    "are the ones typically missing."
+  ],
+  "K":         {"type": "pole", "mass": 0.49368, "br_tau": 0.006986,
+                "jp": "0-"},
+  "Kstar892":  {"type": "bw", "mass": 0.89167, "width": 0.0514,
+                "br_tau": 0.01271, "jp": "1-", "decay": "K pi"},
+  "K1_1270":   {"type": "bw", "mass": 1.253, "width": 0.090,
+                "br_tau": 0.0047, "jp": "1+", "decay": "K rho / K* pi"},
+  "K1_1400":   {"type": "bw", "mass": 1.403, "width": 0.174,
+                "br_tau": 0.0017, "jp": "1+", "decay": "K* pi"},
+  "Kstar1410": {"type": "bw", "mass": 1.414, "width": 0.232,
+                "br_tau": 0.0015, "jp": "1-", "decay": "K* pi"},
+  "K_eta":     {"type": "bw", "mass": 1.414, "width": 0.232,
+                "br_tau": 0.000155, "jp": "1-", "decay": "K eta"}
+}

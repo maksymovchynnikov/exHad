@@ -1,0 +1,349 @@
+{
+ "schema": "exhad-bl-low-mass-v1",
+ "purpose": "B-L exclusive hadronic rows below 2 GeV in EventCalc row format",
+ "units": "GeV; row node values and hadronic widths are partial widths per g_BL^2 (not branching ratios)",
+ "lagrangian": "L = g_BL Z'_mu J_{B-L}^mu, quark charges q_u = q_d = q_s = 1/3; Gamma(Z' -> l+ l-)/g^2 = m/(12 pi)(1+2x)sqrt(1-4x), Gamma(Z' -> nu nubar)/g^2 = m/(24 pi) per flavour",
+ "table": "eventcalc_branching_ratios.json",
+ "hadronic_widths": {
+  "file": "eventcalc_hadronic_widths.dat",
+  "columns": [
+   "mass_gev",
+   "sum_of_rows_width_per_g2_gev"
+  ]
+ },
+ "interpolation": "piecewise-linear-no-extrapolation; thresholds are grid nodes",
+ "threshold_rule": "each row is zero at and below the sum of exhad.core.kinematics.PARTICLES masses",
+ "grid": {
+  "start_gev": 0.001,
+  "end_gev": 2.0,
+  "nodes": 2895,
+  "base_step_gev": 0.001,
+  "refinement": {
+   "tolerance": 0.0001,
+   "criterion": "midpoint |linear - native| of every row and of the row sum <= tolerance x (sum of rows + m/(12 pi))",
+   "passes": 6,
+   "nodes_added": 876,
+   "intervals_unresolved_at_smallest_step": [
+    [
+     1.8765441626,
+     1.876551285059375
+    ],
+    [
+     1.876551285059375,
+     1.87655840751875
+    ],
+    [
+     1.8791308266,
+     1.879144407434375
+    ],
+    [
+     1.879144407434375,
+     1.87915798826875
+    ]
+   ]
+  },
+  "threshold_nodes_gev": [
+   0.13498,
+   0.41412,
+   0.54785,
+   0.98736,
+   0.99522,
+   1.05261,
+   1.06179,
+   1.12234,
+   1.1301999999999999,
+   1.13086,
+   1.26584,
+   1.2665,
+   1.28942,
+   1.2986,
+   1.3304999999999998,
+   1.56731,
+   1.8765441626,
+   1.8791308266
+  ]
+ },
+ "rows": {
+  "KL_KS": {
+   "deliver_submodes": {
+    "KK_n": 1.0
+   },
+   "threshold_gev": 0.99522
+  },
+  "Kp_Km": {
+   "deliver_submodes": {
+    "KK_c": 1.0
+   },
+   "threshold_gev": 0.98736
+  },
+  "KKpi_0_KL_KS_Pi0": {
+   "deliver_submodes": {
+    "KKpi_0": 1.0
+   },
+   "threshold_gev": 1.1301999999999999
+  },
+  "Kp_Km_Pi0": {
+   "deliver_submodes": {
+    "KKpi_1": 1.0
+   },
+   "threshold_gev": 1.12234
+  },
+  "KKpi_2_KS_plus": {
+   "deliver_submodes": {
+    "KKpi_2": 0.25
+   },
+   "threshold_gev": 1.13086
+  },
+  "KKpi_2_KS_minus": {
+   "deliver_submodes": {
+    "KKpi_2": 0.25
+   },
+   "threshold_gev": 1.13086
+  },
+  "KKpi_2_KL_plus": {
+   "deliver_submodes": {
+    "KKpi_2": 0.25
+   },
+   "threshold_gev": 1.13086
+  },
+  "KKpi_2_KL_minus": {
+   "deliver_submodes": {
+    "KKpi_2": 0.25
+   },
+   "threshold_gev": 1.13086
+  },
+  "EtaPhi": {
+   "deliver_submodes": {
+    "EtaPhi": 1.0
+   },
+   "threshold_gev": 1.56731
+  },
+  "KKpipi_0": {
+   "deliver_submodes": {
+    "KKpipi_0": 1.0
+   },
+   "threshold_gev": 1.2665
+  },
+  "KKpipi_1_KS_plus": {
+   "deliver_submodes": {
+    "KKpipi_1": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_1_KS_minus": {
+   "deliver_submodes": {
+    "KKpipi_1": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_1_KL_plus": {
+   "deliver_submodes": {
+    "KKpipi_1": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_1_KL_minus": {
+   "deliver_submodes": {
+    "KKpipi_1": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_2_KS_plus": {
+   "deliver_submodes": {
+    "KKpipi_2": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_2_KS_minus": {
+   "deliver_submodes": {
+    "KKpipi_2": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_2_KL_plus": {
+   "deliver_submodes": {
+    "KKpipi_2": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_2_KL_minus": {
+   "deliver_submodes": {
+    "KKpipi_2": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_3_KS_plus": {
+   "deliver_submodes": {
+    "KKpipi_3": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_3_KS_minus": {
+   "deliver_submodes": {
+    "KKpipi_3": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_3_KL_plus": {
+   "deliver_submodes": {
+    "KKpipi_3": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "KKpipi_3_KL_minus": {
+   "deliver_submodes": {
+    "KKpipi_3": 0.25
+   },
+   "threshold_gev": 1.26584
+  },
+  "PhiPiPi_n": {
+   "deliver_submodes": {
+    "PhiPiPi_n": 1.0
+   },
+   "threshold_gev": 1.28942
+  },
+  "PhiPiPi_c": {
+   "deliver_submodes": {
+    "PhiPiPi_c": 1.0
+   },
+   "threshold_gev": 1.2986
+  },
+  "EtaGamma": {
+   "deliver_submodes": {
+    "EtaGamma": 1.0
+   },
+   "threshold_gev": 0.54785
+  },
+  "EtaOmega": {
+   "deliver_submodes": {
+    "EtaOmega": 1.0
+   },
+   "threshold_gev": 1.3304999999999998
+  },
+  "OmPiPi_n": {
+   "deliver_submodes": {
+    "OmPiPi_n": 1.0
+   },
+   "threshold_gev": 1.05261
+  },
+  "OmPiPi_c": {
+   "deliver_submodes": {
+    "OmPiPi_c": 1.0
+   },
+   "threshold_gev": 1.06179
+  },
+  "Pi0_gamma": {
+   "deliver_submodes": {
+    "PiGamma": 1.0
+   },
+   "threshold_gev": 0.13498
+  },
+  "Pip_Pim_Pi0": {
+   "deliver_submodes": {
+    "3pi": 1.0
+   },
+   "threshold_gev": 0.41412
+  },
+  "ppbar": {
+   "deliver_submodes": {
+    "ppbar": 1.0
+   },
+   "threshold_gev": 1.8765441626
+  },
+  "nnbar": {
+   "deliver_submodes": {
+    "nnbar": 1.0
+   },
+   "threshold_gev": 1.8791308266
+  }
+ },
+ "isovector_channels_zero": [
+  "2pi",
+  "4pi",
+  "6pi",
+  "EtaPiPi",
+  "EtaPrimePiPi",
+  "OmegaPion",
+  "PhiPi"
+ ],
+ "matching_mass_gev": 1.7365093233857432,
+ "matching_mass_is_grid_node": true,
+ "matching_definition": "last crossing on [1.70, 1.80] GeV of the sum of rows (direct DeLiVeR) with exhad.b_l.rates.total_width; join the hadronic width there with a C2 join",
+ "kappa": {
+  "three_pion": {
+   "value": 1.021687450481099,
+   "rows": [
+    "Pip_Pim_Pi0"
+   ],
+   "source": "data/b_l/rates.json three_pion_scale"
+  },
+  "kkpi": {
+   "value": 0.6205111711207437,
+   "rows": [
+    "KKpi_0_KL_KS_Pi0",
+    "Kp_Km_Pi0",
+    "KKpi_2_KS_plus",
+    "KKpi_2_KS_minus",
+    "KKpi_2_KL_plus",
+    "KKpi_2_KL_minus"
+   ],
+   "source": "data/b_l/rates.json kkpi_scale"
+  },
+  "law": "on [m_x, 2.0) GeV scale the kappa rows by 1 + S(m)(kappa - 1), S the quintic smoothstep from 0 at m_x to 1 at 2.0 GeV; no scaling below m_x"
+ },
+ "three_pion_matrix_element": {
+  "row": "Pip_Pim_Pi0",
+  "form": "4 m^2 |p+ x p-|^2 |1/D(E1) + 1/D(E2) + 1/D(E3)|^2, D(E_k) = M^2 - (m^2 + m_k^2 - 2 m E_k) - i M Gamma, E2 = m - E1 - E3; particles 1, 2, 3 = pi+, pi-, pi0",
+  "sign_convention": "the rho propagators BW(s_-0), BW(s_+0), BW(s_+-) enter with the same sign (Bose symmetry of the I = 0 three-pion state; hep-ph/0512180, the model of the DeLiVeR 3pi rates); the dark-photon table row carries the same expression.",
+  "rho_signs_recoiling_against_pip_pim_pi0": [
+   1,
+   1,
+   1
+  ],
+  "rho_mass_gev": 0.775,
+  "rho_width_gev": 0.147,
+  "pion_masses_gev": {
+   "211": 0.13957,
+   "-211": 0.13957,
+   "111": 0.13498
+  },
+  "checks": {
+   "dark_photon_row_equals_table_expression": true,
+   "table_sign_pattern_permutation_symmetry_max_relative_difference_at_equal_masses": 8.534358773049972e-12
+  }
+ },
+ "clipped_negative_deliver_widths": 0,
+ "deliver_width_removed_at_or_below_threshold_max_per_g2_gev": {
+  "Kp_Km": 1.048643443327047e-08,
+  "PhiPiPi_n": 4.4316536446419095e-15
+ },
+ "sources": {
+  "deliver_revision": "7b2bbd79fbacfed9a01d24e903762b4759b9e4a2",
+  "deliver_form_factor_sha256": {
+   "F3pi": "a9bc31ee6af5319c45701ecf647aa020ba53cd45c272ac419c5acec57cfd3226",
+   "FEtaGamma": "f5ef4777225c67c46f1e44d60fc8804c9131513ee9f8bfcc94458cfa9a7f0bd5",
+   "FEtaOmega": "af748c005af3111df890378a91138a2b204a249f10b514feb8dff615ae747704",
+   "FEtaPhi": "42524a4ae7c49352f8f84d13cabdd11c40dfd98b68671c83e87ecb50a99f5440",
+   "FK": "dc2f39579b0eca8e1dd29a38b70f88781faf40e9f77d9bce4b5c6d3d995ea232",
+   "FKKpi": "ffbfe00533797331c6c80492a4ba87073a5d9d8379523fca82097ced30450795",
+   "FKKpipi": "0d181b32b10985f26d1b8b9ce319deeec12963628d2027a8c3a67aa1d612b4a4",
+   "FOmPiPi": "4de82cebd60db7a9a85336d673c5e1fe79ee969638a4241ded9e1ce20de5cae7",
+   "FPhiPiPi": "f86a89515eff859646258c282e544444594304d2ccc5c7cab5bea5a94ec90d75",
+   "FPiGamma": "1ddf53e452883fb25a8bef923564bb667c757ae10c1c25002165e344cfad2652",
+   "Fppbar": "9d00671745e5e1262361969177ada898a87fcc264541f43556b2a618690b8432"
+  },
+  "dark_photon_table_sha256": "a246f18eae9fa4ff4c92a486495d879ca578d6f207f7dd157d04dad7a5239b75",
+  "rates_json_sha256": "3a8851ead24246538bedef4fd3381ca68f55631bced7f0c1ce118629a9901418",
+  "kinematics_sha256": "0f32d9e96d4185f9ca605cf3bde28a5526fa0217fa75a51d7bccb64adc511f08",
+  "builder_sha256": "5d35837d7152ea2a017fa5916df3b318971b8a1bcfbfc327cd13d43996b0f259",
+  "quadrature": "tools/build_bl_low_mass.py _quadrature (port of the removed scipy.integrate.quadrature)",
+  "python": "3.14.6",
+  "numpy": "2.4.6",
+  "scipy": "1.18.0",
+  "sympy": "1.14.0"
+ },
+ "outputs_sha256": {
+  "eventcalc_branching_ratios.json": "9eafab1fc71758a836deb1767a06637fcc1dd8062d230f73e373375b9b6ab7d9",
+  "eventcalc_hadronic_widths.dat": "170a7aacc4b75f8dea544ab38d1cec1c693313c895b284e02bb0db751c222854"
+ }
+}

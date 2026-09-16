@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper and the model-specific sources in docs/PHYSICS.md."
+title: "exHad: reference-matched hadronic decays of GeV-scale particles"
+type: software
+authors:
+  - family-names: Kryshtal
+    given-names: Viktor
+  - family-names: Ovchynnikov
+    given-names: Maksym

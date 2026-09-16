@@ -1,0 +1,37 @@
+{
+  "seed_namespace_note": "Each seed_namespace is a fixed random-stream label hashed into every event seed of its deployment; changing it changes the random streams, not the physics.",
+  "deployments": {
+    "alp-fermion": {
+      "seed_namespace": "d6a584a27207fd3346d2e7411b2c1c7af31213f17a90eaceaad0c957e5629317",
+      "path": "alp-fermion/model1.json"
+    },
+    "b-l": {
+      "seed_namespace": "4e30c7226437e990240f535c3e8b94f974f945f4b59e54709f0f44999a6ffdf1",
+      "path": "b-l/model1.json"
+    },
+    "hnl-cc-ud": {
+      "seed_namespace": "fde12b217031f4f7cbaad9446dedf37e716d7ea167fe4f1f95ae7cf0f4b3d3fb",
+      "path": "hnl/model1_cc_ud.json"
+    },
+    "hnl-nc-ud": {
+      "seed_namespace": "f6bcde081f3fdf9f2eb7ada0f7fe392ec2815aacac9186acb3e7705e04a00b2c",
+      "path": "hnl/model1_nc_ud.json"
+    },
+    "scalar-central": {
+      "seed_namespace": "03830aff073d195b43332c1f7965ec9634b355c92259cbbe2bffffbc62e61e6e",
+      "path": "scalar/model1_2407.13587_central.json"
+    },
+    "scalar-lower": {
+      "seed_namespace": "4a3170002f87f0753a6a4e3252f4c8fd9e65d7991e9efc55ad4477fc4b9da847",
+      "path": "scalar/model1_2407.13587_lower.json"
+    },
+    "scalar-upper": {
+      "seed_namespace": "3e053cb1053618462f52062e4417fd9516b207446b24cf2e81dd656b4a438082",
+      "path": "scalar/model1_2407.13587_upper.json"
+    },
+    "scalar-1809": {
+      "seed_namespace": "3c8948561d93cc59d6f000c9206ae0991436af2beb5c310848facc3fe47612d7",
+      "path": "scalar/model1_1809.01876.json"
+    }
+  }
+}

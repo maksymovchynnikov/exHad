@@ -1,0 +1,2 @@
+# Keep source and data files byte for byte as committed; Git must not rewrite line endings.
+* -text

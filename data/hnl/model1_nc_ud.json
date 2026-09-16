@@ -1,0 +1,149 @@
+{
+ "portal_id": "hnl-nc-ud",
+ "activation_support_gev": [3.0, 5.0],
+ "supported_variations": ["central", "saturation-off", "p-low", "p-high"],
+ "maximum_attempts": 294,
+ "generator_scenario_id": "central",
+ "generator_pythia_settings": ["StringFlav:probStoUD=0.217", "StringFlav:probQQtoQ=0.081", "StringFlav:mesonUDvector=0.5", "StringFlav:mesonSvector=0.55", "StringFlav:etaSup=0.6", "StringFlav:etaPrimeSup=0.12", "StringPT:sigma=0.335", "StringFragmentation:stopNewFlav=2.0", "StringFragmentation:stopSmear=0.2", "StringFlav:mesonUDL1S0J1=0.0", "StringFlav:mesonUDL1S1J0=0.0", "StringFlav:mesonUDL1S1J1=0.0", "StringFlav:mesonUDL1S1J2=0.0", "StringFlav:mesonSL1S0J1=0.0", "StringFlav:mesonSL1S1J0=0.0", "StringFlav:mesonSL1S1J1=0.0", "StringFlav:mesonSL1S1J2=0.0", "StringFlav:mesonNonetL1=off", "StringZ:aLund=0.68", "StringZ:avgZLund=0.55", "StringZ:deriveLundPars=1"],
+ "rows": {
+  "active-fragmentation": {
+   "owner_kind": "active",
+   "authority_row_ids": ["active-current-residual"],
+   "realizer": null
+  }
+ },
+ "source_runners": {
+  "nc-ud-rho": {
+   "source_quantum_numbers": {"spin_doubled": 2, "parity": -1, "c_parity": null, "charge": 0},
+   "carries_parent_spin": false,
+   "decay_mode": "qq",
+   "runner_component": "rho",
+   "stop_mass_gev": 0.0
+  },
+  "nc-ud-omega": {
+   "source_quantum_numbers": {"spin_doubled": 2, "parity": -1, "c_parity": null, "charge": 0},
+   "carries_parent_spin": false,
+   "decay_mode": "qq",
+   "runner_component": "omega",
+   "stop_mass_gev": 0.0
+  },
+  "nc-ud-axial": {
+   "source_quantum_numbers": {"spin_doubled": 2, "parity": -1, "c_parity": null, "charge": 0},
+   "carries_parent_spin": false,
+   "decay_mode": "qq",
+   "runner_component": "ncax",
+   "stop_mass_gev": 0.0
+  }
+ },
+ "family_model": {
+  "contract": {
+   "classifier_id": "hnl-fixed-w-families",
+   "remainder_family_id": "remaining",
+   "source_ids": ["nc-ud-rho", "nc-ud-omega", "nc-ud-axial"],
+   "families": [
+    {
+     "family_id": "two-pion",
+     "boundary_probability": 0.0005640173943,
+     "supported_sources": ["nc-ud-rho"]
+    },
+    {
+     "family_id": "three-pion",
+     "boundary_probability": 0.1244405625,
+     "supported_sources": ["nc-ud-omega", "nc-ud-axial"]
+    },
+    {
+     "family_id": "four-pion",
+     "boundary_probability": 0.06431270161,
+     "supported_sources": ["nc-ud-rho"]
+    },
+    {
+     "family_id": "remaining",
+     "boundary_probability": 0.8106827184957,
+     "supported_sources": ["nc-ud-rho", "nc-ud-omega", "nc-ud-axial"]
+    }
+   ],
+   "removed_external_modes": [
+    {
+     "classifier_families": [],
+     "final_state_keys": []
+    }
+   ],
+   "split_mass_gev": 3.0,
+   "endpoint_mass_gev": 5.0,
+   "leading_power": {
+    "central": 2.0,
+    "alternatives": [1.75, 2.25]
+   },
+   "probability_matching": null
+  },
+  "families": {
+   "two-pion": {
+    "response_mode": "boundary-conditioned",
+    "matching_nodes": [
+     [3.0, 1.0],
+     [3.1, 1.0],
+     [3.2, 1.0],
+     [3.3, 1.0],
+     [3.4, 1.0],
+     [3.5, 1.0],
+     [3.6, 1.0],
+     [3.75, 1.0],
+     [4.0, 1.0],
+     [4.25, 1.0],
+     [4.5, 1.0],
+     [4.75, 1.0],
+     [5.0, 1.0]
+    ]
+   },
+   "three-pion": {
+    "response_mode": "pythia-matched",
+    "matching_nodes": [
+     [3.0, 1.0],
+     [3.1, 1.0],
+     [3.2, 1.0],
+     [3.3, 1.0],
+     [3.4, 1.0],
+     [3.5, 1.0],
+     [3.6, 1.0],
+     [3.75, 1.0],
+     [4.0, 1.0],
+     [4.25, 1.0],
+     [4.5, 1.0],
+     [4.75, 1.0],
+     [5.0, 1.0]
+    ]
+   },
+   "four-pion": {
+    "response_mode": "pythia-matched",
+    "matching_nodes": [
+     [3.0, 1.0],
+     [3.1, 1.0],
+     [3.2, 1.0],
+     [3.3, 1.0],
+     [3.4, 1.0],
+     [3.5, 1.0],
+     [3.6, 1.0],
+     [3.75, 1.0],
+     [4.0, 1.0],
+     [4.25, 1.0],
+     [4.5, 1.0],
+     [4.75, 1.0],
+     [5.0, 1.0]
+    ]
+   }
+  },
+  "response_masses": [3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0],
+  "mixed_probabilities": {
+   "two-pion": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+   "three-pion": [0.021668642219285897, 0.01916901353680969, 0.017206665729818486, 0.015439879868719121, 0.013883190994452576, 0.012684515992779154, 0.011452487716601087, 0.010030592442276515, 0.008035133335962424, 0.006580803595037247, 0.005550522789928229, 0.0045946254636072, 0.0038879827825966293],
+   "four-pion": [0.02568673907759517, 0.02284162445480674, 0.0204307970939713, 0.018346940727071263, 0.016661070881218428, 0.015154590133628182, 0.01382194764285134, 0.012201983025633287, 0.009956799822329119, 0.008278154881219671, 0.006921282526974158, 0.005854992317163821, 0.0049846556213691984],
+   "remaining": [0.9526446187031189, 0.9579893620083836, 0.9623625371762102, 0.9662131794042095, 0.969455738124329, 0.9721608938735926, 0.9747255646405476, 0.9777674245320902, 0.9820080668417084, 0.985141041523743, 0.9875281946830977, 0.989550382219229, 0.9911273615960342]
+  },
+  "source_masses": [3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0],
+  "source_weights": {
+   "nc-ud-rho": [0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705, 0.22027148607881705],
+   "nc-ud-omega": [0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373, 0.017579728625661373],
+   "nc-ud-axial": [0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215, 0.7621487852955215]
+  }
+ }
+}

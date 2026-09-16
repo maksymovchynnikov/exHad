@@ -1,0 +1,159 @@
+{
+ "portal_id": "scalar",
+ "activation_support_gev": [2.0, 5.0],
+ "supported_variations": ["central", "saturation-off", "p-low", "p-high"],
+ "maximum_attempts": 7507,
+ "generator_scenario_id": "central",
+ "generator_pythia_settings": ["StringFlav:probStoUD=0.217", "StringFlav:probQQtoQ=0.081", "StringFlav:mesonUDvector=0.5", "StringFlav:mesonSvector=0.55", "StringFlav:etaSup=0.6", "StringFlav:etaPrimeSup=0.12", "StringPT:sigma=0.335", "StringFragmentation:stopNewFlav=2.0", "StringFragmentation:stopSmear=0.2", "StringFlav:mesonUDL1S0J1=0.0", "StringFlav:mesonUDL1S1J0=0.0", "StringFlav:mesonUDL1S1J1=0.0", "StringFlav:mesonUDL1S1J2=0.0", "StringFlav:mesonSL1S0J1=0.0", "StringFlav:mesonSL1S1J0=0.0", "StringFlav:mesonSL1S1J1=0.0", "StringFlav:mesonSL1S1J2=0.0", "StringFlav:mesonNonetL1=off", "StringZ:aLund=0.68", "StringZ:avgZLund=0.55", "StringZ:deriveLundPars=1"],
+ "outer_owner_authority": "scalar/outer_owner_probabilities_2407.13587_lower.json",
+ "rows": {
+  "eventcalc-direct-owners": {
+   "owner_kind": "external",
+   "authority_row_ids": ["2Kch", "2Pi0", "KLKL", "KSKS", "PipPim", "nnbar", "ppbar"],
+   "realizer": {
+    "callable": "exhad.model1.realizers:realize_eventcalc_decay_table_row",
+    "configuration": {
+     "rows": {
+      "2Kch": {
+       "pdg_ids": [321, -321]
+      },
+      "2Pi0": {
+       "pdg_ids": [111, 111]
+      },
+      "KLKL": {
+       "pdg_ids": [130, 130]
+      },
+      "KSKS": {
+       "pdg_ids": [310, 310]
+      },
+      "PipPim": {
+       "pdg_ids": [211, -211]
+      },
+      "nnbar": {
+       "pdg_ids": [2112, -2112]
+      },
+      "ppbar": {
+       "pdg_ids": [2212, -2212]
+      }
+     }
+    }
+   }
+  },
+  "active-fragmentation": {
+   "owner_kind": "active",
+   "authority_row_ids": ["Jets-GG", "Jets-ss"],
+   "realizer": null
+  },
+  "open-charm": {
+   "owner_kind": "charm",
+   "authority_row_ids": ["Jets-cc"],
+   "realizer": {
+    "callable": "exhad.model1.realizers:realize_eventcalc_decay_table_row",
+    "configuration": {
+     "rows": {
+      "Jets-cc": {
+       "pdg_ids": [4, -4]
+      }
+     }
+    }
+   }
+  }
+ },
+ "source_runners": {
+  "scalar-gluon": {
+   "source_quantum_numbers": {"spin_doubled": 0, "parity": 1, "c_parity": 1, "charge": 0},
+   "carries_parent_spin": true,
+   "decay_mode": "gg",
+   "runner_component": "glue",
+   "stop_mass_gev": 0.0
+  },
+  "scalar-strange": {
+   "source_quantum_numbers": {"spin_doubled": 0, "parity": 1, "c_parity": 1, "charge": 0},
+   "carries_parent_spin": true,
+   "decay_mode": "qq",
+   "runner_component": "strange",
+   "stop_mass_gev": 0.0
+  }
+ },
+ "family_model": {
+  "contract": {
+   "classifier_id": "scalar-families",
+   "remainder_family_id": "remainder",
+   "source_ids": ["scalar-gluon", "scalar-strange"],
+   "families": [
+    {
+     "family_id": "four-pion",
+     "boundary_probability": 1.0,
+     "supported_sources": ["scalar-gluon", "scalar-strange"]
+    },
+    {
+     "family_id": "remainder",
+     "boundary_probability": 0.0,
+     "supported_sources": ["scalar-gluon", "scalar-strange"]
+    }
+   ],
+   "removed_external_modes": [
+    {
+     "classifier_families": ["pipi"],
+     "final_state_keys": []
+    },
+    {
+     "classifier_families": ["kk"],
+     "final_state_keys": []
+    },
+    {
+     "classifier_families": ["baryon-pair"],
+     "final_state_keys": []
+    },
+    {
+     "classifier_families": [],
+     "final_state_keys": []
+    }
+   ],
+   "split_mass_gev": 2.0,
+   "endpoint_mass_gev": 5.0,
+   "leading_power": {
+    "central": 2.0,
+    "alternatives": [1.75, 2.25]
+   },
+   "probability_matching": null
+  },
+  "families": {
+   "four-pion": {
+    "response_mode": "pythia-matched",
+    "matching_nodes": [
+     [2.0, 1.0],
+     [2.01, 1.0278177912086355],
+     [2.1, 1.300603859505735],
+     [2.2, 1.6482376862117567],
+     [2.32, 2.134832893742322],
+     [2.5, 2.828257424226049],
+     [2.75, 3.5665904356331506],
+     [3.0, 3.9257287279480786],
+     [3.1, 3.9566468029588533],
+     [3.2, 3.9566468029588533],
+     [3.3, 3.9566468029588533],
+     [3.4, 3.9566468029588533],
+     [3.5, 3.9566468029588533],
+     [3.6, 3.9566468029588533],
+     [3.75, 3.9566468029588533],
+     [4.0, 3.9566468029588533],
+     [4.25, 3.9566468029588533],
+     [4.5, 3.9566468029588533],
+     [4.75, 3.9566468029588533],
+     [5.0, 3.9566468029588533]
+    ]
+   }
+  },
+  "response_masses": [2.0, 2.01, 2.1, 2.2, 2.32, 2.5, 2.75, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0],
+  "mixed_probabilities": {
+   "four-pion": [0.18430774405764797, 0.18282850261464098, 0.16938886795620187, 0.15416032987121336, 0.13682373328252112, 0.106501610731913, 0.0681553086054518, 0.04038558811722671, 0.03281838938785334, 0.02609016249778982, 0.0207268476584066, 0.016673398342823744, 0.013501142671895658, 0.010965330322199401, 0.008382420245218692, 0.005123067057888524, 0.003420688027743759, 0.0022775148451133153, 0.0014786201176803131, 0.0011295853160073735],
+   "remainder": [0.8156922559423522, 0.817171497385359, 0.830611132043798, 0.8458396701287867, 0.8631762667174789, 0.893498389268087, 0.9318446913945483, 0.9596144118827732, 0.9671816106121467, 0.9739098375022102, 0.9792731523415934, 0.9833266016571762, 0.9864988573281044, 0.9890346696778006, 0.9916175797547814, 0.9948769329421114, 0.9965793119722562, 0.9977224851548867, 0.9985213798823195, 0.9988704146839926]
+  },
+  "source_masses": [2.0, 2.01, 2.1, 2.2, 2.32, 2.5, 2.75, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0],
+  "source_weights": {
+   "scalar-gluon": [0.765205553267731, 0.7660595930360464, 0.7739050834424986, 0.783130789330197, 0.7946031369488893, 0.8121583077709803, 0.8368767671834128, 0.8641814332709319, 0.8768181554325174, 0.8858831573965219, 0.8926060433829491, 0.8977497561535162, 0.9017826040631711, 0.9050038636163855, 0.9087610018848118, 0.9131095521307431, 0.9160474150174232, 0.9181854785601214, 0.9198860410741972, 0.9213613873244395],
+   "scalar-strange": [0.23479444673226907, 0.2339404069639535, 0.22609491655750133, 0.21686921066980308, 0.2053968630511107, 0.18784169222901967, 0.1631232328165873, 0.13581856672906806, 0.1231818445674826, 0.11411684260347808, 0.10739395661705084, 0.10225024384648386, 0.09821739593682893, 0.0949961363836145, 0.09123899811518826, 0.08689044786925687, 0.08395258498257689, 0.08181452143987857, 0.08011395892580267, 0.07863861267556052]
+  }
+ }
+}

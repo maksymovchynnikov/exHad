@@ -1,0 +1,187 @@
+{
+  "schema": "exhad-matched-open-charm-v1",
+  "benchmark_id": "electromagnetic-open-charm-data-v1",
+  "domain_gev": [
+    3.7,
+    5.0
+  ],
+  "inclusive": {
+    "kind": "measured-total-R-minus-perturbative-uds",
+    "source_path": "data/common/pdg2020_R_ratio.dat",
+    "selection": [
+      {
+        "short_code": "BAI 01",
+        "range_gev": [
+          3.7,
+          4.8
+        ],
+        "source_id": "BES:2002:RScan:hep-ex/0102003"
+      },
+      {
+        "short_code": "BAI 00C",
+        "masses_gev": [
+          5.0
+        ],
+        "source_id": "BES:2000:RScan:hep-ex/9908046"
+      }
+    ],
+    "uds_authority": "exhad.dark_photon.widths.electromagnetic_uds_r",
+    "normalization_note": "The owner uses the measured total R and subtracts the separately defined light-uds response. No extra broad-psi correction terms and no running-alpha fit parameters are introduced."
+  },
+  "exclusive_data_path": "data/common/open_charm_cross_sections.csv",
+  "channels": [
+    {
+      "channel_id": "ddbar",
+      "label": "D0 D0bar plus D+ D-",
+      "physical_threshold_gev": 3.72966,
+      "expected_node_count": 63,
+      "primary_states": [
+        "D0:D0bar",
+        "D+:D-"
+      ],
+      "possible_light_family_feed_down": [
+        "KKpipi",
+        "KKmultipion",
+        "multipion"
+      ],
+      "source_ids": [
+        "BaBar:2007:DDbar:HEPData18803"
+      ]
+    },
+    {
+      "channel_id": "dstar_d_charged_cc",
+      "label": "D*+ D- plus charge conjugate",
+      "physical_threshold_gev": 3.87992,
+      "expected_node_count": 28,
+      "primary_states": [
+        "D*+:D-",
+        "D*-:D+"
+      ],
+      "possible_light_family_feed_down": [
+        "KKpipi",
+        "KKmultipion",
+        "multipion",
+        "radiative-light-hadrons"
+      ],
+      "source_ids": [
+        "BESIII:2022:DstarD:2112.06477"
+      ]
+    },
+    {
+      "channel_id": "dstar_charged_pair",
+      "label": "D*+ D*-",
+      "physical_threshold_gev": 4.02052,
+      "expected_node_count": 28,
+      "primary_states": [
+        "D*+:D*-"
+      ],
+      "possible_light_family_feed_down": [
+        "KKmultipion",
+        "multipion",
+        "radiative-light-hadrons"
+      ],
+      "source_ids": [
+        "BESIII:2022:DstarPair:2112.06477"
+      ]
+    },
+    {
+      "channel_id": "dsstar_pair",
+      "label": "Ds*+ Ds*-",
+      "physical_threshold_gev": 4.2244,
+      "expected_node_count": 76,
+      "primary_states": [
+        "Ds*+:Ds*-"
+      ],
+      "possible_light_family_feed_down": [
+        "KKpipi",
+        "KKmultipion",
+        "multipion",
+        "radiative-light-hadrons"
+      ],
+      "source_ids": [
+        "BESIII:2023:DsstarPair:2305.10789"
+      ]
+    },
+    {
+      "channel_id": "lambdac_pair",
+      "label": "Lambda_c+ Lambda_c-",
+      "physical_threshold_gev": 4.57292,
+      "expected_node_count": 16,
+      "primary_states": [
+        "Lambda_c+:Lambda_c-"
+      ],
+      "possible_light_family_feed_down": [
+        "nucleon-containing",
+        "KKmultipion",
+        "multipion"
+      ],
+      "source_ids": [
+        "BESIII:2023:LambdaCPair:2307.07316"
+      ]
+    },
+    {
+      "channel_id": "pipi_dd_charged",
+      "label": "pi+ pi- D+ D-",
+      "physical_threshold_gev": 4.01846,
+      "expected_node_count": 37,
+      "primary_states": [
+        "pi+:pi-:D+:D-"
+      ],
+      "possible_light_family_feed_down": [
+        "KKmultipion",
+        "multipion"
+      ],
+      "source_ids": [
+        "BESIII:2022:PiPiDD:2208.00099"
+      ]
+    }
+  ],
+  "sources": {
+    "BaBar:2007:DDbar:HEPData18803": {
+      "doi": "10.1103/PhysRevD.76.111105",
+      "arxiv": "0710.1371",
+      "hepdata_record": "https://www.hepdata.net/record/18803"
+    },
+    "BESIII:2022:DstarPair:2112.06477": {
+      "doi": "10.1007/JHEP05(2022)155",
+      "arxiv": "2112.06477"
+    },
+    "BESIII:2022:DstarD:2112.06477": {
+      "doi": "10.1007/JHEP05(2022)155",
+      "arxiv": "2112.06477"
+    },
+    "BESIII:2023:DsstarPair:2305.10789": {
+      "doi": "10.1103/PhysRevLett.131.151903",
+      "arxiv": "2305.10789"
+    },
+    "BESIII:2023:LambdaCPair:2307.07316": {
+      "doi": "10.1103/PhysRevLett.131.191901",
+      "arxiv": "2307.07316"
+    },
+    "BESIII:2022:PiPiDD:2208.00099": {
+      "doi": "10.1103/PhysRevLett.130.121901",
+      "arxiv": "2208.00099"
+    },
+    "BES:2002:RScan:hep-ex/0102003": {
+      "doi": "10.1103/PhysRevLett.88.101802",
+      "arxiv": "hep-ex/0102003"
+    },
+    "BES:2000:RScan:hep-ex/9908046": {
+      "doi": "10.1103/PhysRevLett.84.594",
+      "arxiv": "hep-ex/9908046"
+    }
+  },
+  "unresolved_families": [
+    "Ds+ Ds-",
+    "Ds* Ds plus charge conjugate",
+    "neutral D* D and D* D* partners not present in the supplied numerical tables",
+    "other open-charm multibody channels",
+    "charmed-baryon channels other than Lambda_c+ Lambda_c-",
+    "hidden-charm plus light hadrons"
+  ],
+  "closure_policy": {
+    "outside_measured_support": "Return zero resolved weight and leave the probability in unresolved charm; never extrapolate silently.",
+    "oversubscription": "Apply one common nonnegative radial projection to all active measured owners, set an explicit projection flag, and report the inclusive-exclusive tension.",
+    "light_table_overlap": "Primary charm owners are not automatically disjoint from prompt light-exclusive tables after D-hadron decay. Possible feed-down families are metadata only; subtraction requires an experimental charm veto or a separate response calculation."
+  }
+}

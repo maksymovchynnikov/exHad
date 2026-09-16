@@ -1,0 +1,4911 @@
+{
+ "authority_id": "dark-photon-em-seven-response-full-range-v1",
+ "support_gev": [2.0, 5.0],
+ "edge_fraction_anchors": {
+  "four-pion-charged-block": 0.11726747025384707,
+  "four-pion-neutral-block": 0.17212095754427523,
+  "kkpipi-charged-block": 0.06367176950145509,
+  "kkpipi-neutral-block": 0.04673325817319066,
+  "six-pion-charged-block": 0.024486775253798523,
+  "six-pion-neutral-block": 0.10332221161340743,
+  "three-pion-block": 0.009191311569135822
+ },
+ "routes": [
+  {
+   "response_block_id": "four-pion-charged-block",
+   "channel_id": "two-charged-pion-pairs",
+   "realizer_id": "vector-two-charged-pion-pairs",
+   "provider_id": "em-fit-four-pion-charged-block",
+   "final_state_keys": ["-211:2 211:2"]
+  },
+  {
+   "response_block_id": "four-pion-neutral-block",
+   "channel_id": "charged-pion-pair-two-pi0",
+   "realizer_id": "vector-charged-pion-pair-two-pi0",
+   "provider_id": "em-fit-four-pion-neutral-block",
+   "final_state_keys": ["-211:1 111:2 211:1"]
+  },
+  {
+   "response_block_id": "kkpipi-charged-block",
+   "channel_id": "kaon-pair-two-pion-charged",
+   "realizer_id": "vector-kaon-pair-two-pion-charged",
+   "provider_id": "em-fit-kkpipi-charged-block",
+   "final_state_keys": ["-321:1 -211:1 211:1 321:1"]
+  },
+  {
+   "response_block_id": "kkpipi-neutral-block",
+   "channel_id": "kaon-pair-two-pion-neutral-containing",
+   "realizer_id": "vector-kaon-pair-two-pion-neutral-containing",
+   "provider_id": "em-fit-kkpipi-neutral-block",
+   "final_state_keys": ["-211:1 111:1 130:1 321:1", "-211:1 111:1 310:1 321:1", "-211:1 130:1 211:1 310:1", "-211:1 130:2 211:1", "-211:1 211:1 310:2", "-311:1 -211:1 111:1 321:1", "-311:1 -211:1 211:1 311:1", "-311:1 111:2 311:1", "-321:1 111:1 130:1 211:1", "-321:1 111:1 211:1 310:1", "-321:1 111:1 211:1 311:1", "-321:1 111:2 321:1"]
+  },
+  {
+   "response_block_id": "six-pion-charged-block",
+   "channel_id": "six-pion-charged-class",
+   "realizer_id": "vector-six-pion-charged-class",
+   "provider_id": "em-fit-six-pion-charged-block",
+   "final_state_keys": ["-211:3 211:3"]
+  },
+  {
+   "response_block_id": "six-pion-neutral-block",
+   "channel_id": "six-pion-neutral-class",
+   "realizer_id": "vector-six-pion-neutral-class",
+   "provider_id": "em-fit-six-pion-neutral-block",
+   "final_state_keys": ["-211:2 111:2 211:2"]
+  },
+  {
+   "response_block_id": "three-pion-block",
+   "channel_id": "charged-pion-pair-pi0",
+   "realizer_id": "vector-charged-pion-pair-pi0",
+   "provider_id": "em-fit-three-pion-block",
+   "final_state_keys": ["-211:1 111:1 211:1"]
+  }
+ ],
+ "blocks": {
+  "four-pion-charged-block": {
+   "poles": [
+    {
+     "mass_gev": 1.465,
+     "width_gev": 0.4
+    },
+    {
+     "mass_gev": 1.72,
+     "width_gev": 0.25
+    }
+   ],
+   "continuum": {
+    "cut_gev2": 0.3015046381475844,
+    "expansion_point_gev2": 0.0,
+    "order": 0,
+    "outer_falloff_power": 1
+   }
+  },
+  "four-pion-neutral-block": {
+   "poles": [
+    {
+     "mass_gev": 1.465,
+     "width_gev": 0.4
+    },
+    {
+     "mass_gev": 1.72,
+     "width_gev": 0.25
+    }
+   ],
+   "continuum": {
+    "cut_gev2": 0.3015046381475844,
+    "expansion_point_gev2": 0.0,
+    "order": 0,
+    "outer_falloff_power": 1
+   }
+  },
+  "kkpipi-charged-block": {
+   "poles": [
+    {
+     "mass_gev": 1.68,
+     "width_gev": 0.15
+    },
+    {
+     "mass_gev": 2.164,
+     "width_gev": 0.088
+    }
+   ],
+   "continuum": {
+    "cut_gev2": 1.5808224010177596,
+    "expansion_point_gev2": 0.0,
+    "order": 0,
+    "outer_falloff_power": 1
+   }
+  },
+  "kkpipi-neutral-block": {
+   "poles": [
+    {
+     "mass_gev": 1.68,
+     "width_gev": 0.15
+    },
+    {
+     "mass_gev": 2.164,
+     "width_gev": 0.088
+    }
+   ],
+   "continuum": {
+    "cut_gev2": 1.5808224010177596,
+    "expansion_point_gev2": 0.0,
+    "order": 0,
+    "outer_falloff_power": 1
+   }
+  },
+  "six-pion-charged-block": {
+   "poles": [
+    {
+     "mass_gev": 2.11,
+     "width_gev": 0.41
+    }
+   ],
+   "continuum": {
+    "cut_gev2": 0.6859734802602255,
+    "expansion_point_gev2": 0.0,
+    "order": 0,
+    "outer_falloff_power": 1
+   }
+  },
+  "six-pion-neutral-block": {
+   "poles": [
+    {
+     "mass_gev": 2.11,
+     "width_gev": 0.41
+    }
+   ],
+   "continuum": {
+    "cut_gev2": 0.6859734802602255,
+    "expansion_point_gev2": 0.0,
+    "order": 0,
+    "outer_falloff_power": 1
+   }
+  },
+  "three-pion-block": {
+   "poles": [
+    {
+     "mass_gev": 1.41,
+     "width_gev": 0.29
+    },
+    {
+     "mass_gev": 1.67,
+     "width_gev": 0.315
+    }
+   ],
+   "continuum": {
+    "cut_gev2": 0.17149337006505638,
+    "expansion_point_gev2": 0.0,
+    "order": 0,
+    "outer_falloff_power": 1
+   }
+  }
+ },
+ "variations": {
+  "None": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-01-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-0.9512009547171498, 0.0],
+     [-0.2545316189646434, -0.5894514958946416],
+     [2.230084531533812, 5.272683617527729]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.06610022123847306
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.041657724761077305
+    }
+   ]
+  },
+  "coefficient-eigenmode-01-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-3.283174178358977, 0.0],
+     [1.3164947510299405, 0.9250849883849656],
+     [7.320368739228233, -3.208843432695741]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.06609702538615482
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.0416556920264515
+    }
+   ]
+  },
+  "coefficient-eigenmode-02-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663803, -0.8436415147347562],
+     [-4.983229649111923, 3.513382023546347]
+    ],
+    "four-pion-neutral-block": [
+     [-24.7817886629263, 0.0],
+     [3.9896171758792276, -0.4409793879605041],
+     [48.35583556292093, 19.788575093963853]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058444, 0.0],
+     [-0.01034148830234492, -0.028096704357994138],
+     [0.21527536265431807, 0.3490810393566181]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466934, 0.0],
+     [0.0007185918177314915, 0.0007619783928487843],
+     [0.05043131150577863, -0.157741856834774]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514841069,
+     "four-pion-neutral-block": 0.1706558578061962,
+     "kkpipi-charged-block": 0.04603733521627298,
+     "kkpipi-neutral-block": 0.008978860213173494,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847706,
+     "four-pion-neutral-block": 0.406540404440102,
+     "kkpipi-charged-block": 0.03928459350139951,
+     "kkpipi-neutral-block": 0.007733021994517139,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-02-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663841, -0.8436415147347605],
+     [-4.983229649111923, 3.5133820235463444]
+    ],
+    "four-pion-neutral-block": [
+     [28.76683902561209, 0.0],
+     [-5.115389062571016, 0.2947180216107322],
+     [-55.65066833605401, -16.466946099633322]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742059032, 0.0],
+     [-0.010341488302345821, -0.02809670435799416],
+     [0.2152753626543223, 0.3490810393566229]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1321325755946638, 0.0],
+     [0.0007185918177314146, 0.0007619783928487364],
+     [0.05043131150578057, -0.15774185683477573]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514852456,
+     "four-pion-neutral-block": 0.171847703606357,
+     "kkpipi-charged-block": 0.04603733521644621,
+     "kkpipi-neutral-block": 0.008978860213173793,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847528,
+     "four-pion-neutral-block": 0.4064319103272018,
+     "kkpipi-charged-block": 0.03928459350139927,
+     "kkpipi-neutral-block": 0.007733021994517438,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-03-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [18.941462233535166, 0.0],
+     [-5.09105230010838, -2.015012602199291],
+     [-28.095234569488863, 2.905203457468678]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11215237992002469, 0.0],
+     [-0.00543371010481345, -0.02974671251953364],
+     [0.17088123194519314, 0.368677068802149]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13212115822545425, 0.0],
+     [0.0007192926879635052, 0.0007624445700423911],
+     [0.05042869546728789, -0.15779214260788324]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.07601394331177909,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04718304262700782,
+     "kkpipi-neutral-block": 0.008981463242923522,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.07609990909881428,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.040206351524165074,
+     "kkpipi-neutral-block": 0.007735682531853822,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-03-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [-11.863075706298801, 0.0],
+     [3.3321993625756163, 0.3277295727297741],
+     [18.128775271265017, 4.121560589624013]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.12262777492115007, 0.0],
+     [-0.01524926649987729, -0.026446696196454657],
+     [0.2596694933634472, 0.329485009911092]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13214399296387888, 0.0],
+     [0.0007178909474994009, 0.0007615122156551295],
+     [0.050433927544271305, -0.1576915710616665]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.07429827387116604,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04713200822276715,
+     "kkpipi-neutral-block": 0.008976260970600454,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.07550200440262136,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.04015125283207137,
+     "kkpipi-neutral-block": 0.007730364435072801,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-04-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.536650560030326, 0.0],
+     [-0.8779636763045859, -0.8433571502300498],
+     [-4.983973315842688, 3.5133305709970712]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.051000655839922665, 0.0],
+     [0.047541079733650043, -0.04741616866522985],
+     [-0.31060735286644486, 0.5750722113120704]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213894167811271, 0.0],
+     [0.0007182008814333372, 0.0007617183731635536],
+     [0.05043277179110013, -0.15771380691695733]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08098562383985464,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.20129562980410978,
+     "kkpipi-neutral-block": 0.008977409961475266,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.0672553222794449,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.16310883708103255,
+     "kkpipi-neutral-block": 0.007731539301444381,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-04-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.541735967206038, 0.0],
+     [-0.8808892612281785, -0.8439258792394669],
+     [-4.982485982381158, 3.5134334760956203]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.1837794990012521, 0.0],
+     [-0.06822405633834079, -0.008777240050758448],
+     [0.7411580781750853, 0.12308986740117053]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13212620951122042, 0.0],
+     [0.0007189827540295689, 0.000762238412533967],
+     [0.050429851220459065, -0.15776990675259242]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.0809946175854386,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.20151722274654532,
+     "kkpipi-neutral-block": 0.008980311643143026,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725770380939274,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.1633338086710613,
+     "kkpipi-neutral-block": 0.007734505614066087,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-05-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-1.759219877499144, 0.0],
+     [0.5039755646428004, 0.23042218719424135],
+     [3.8902037765547566, 0.4085184535259697]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.00727268904783766
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.0052264665633724415
+    }
+   ]
+  },
+  "coefficient-eigenmode-05-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.475155255576983, 0.0],
+     [0.5579875674224968, 0.10521130529608252],
+     [5.660249494207289, 1.6553217313060182]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.00724550991843499
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.005101619938719609
+    }
+   ]
+  },
+  "coefficient-eigenmode-06-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932636181003, 0.0],
+     [-0.8794264687663895, -0.8436415147356843],
+     [-4.983229649111923, 3.513382023546108]
+    ],
+    "four-pion-neutral-block": [
+     [1.4281743828538738, 0.0],
+     [-0.2508074484471211, -0.02189106585842429],
+     [-3.8361657137331657, 1.2914132994875134]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742080625, 0.0],
+     [-0.010341488302242442, -0.02809670435800815],
+     [0.21527536265421512, 0.349081039356413]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559439193, 0.0],
+     [0.0007185918177407736, 0.0007619783928518959],
+     [0.050431311505766574, -0.15774185683468822]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514906474,
+     "four-pion-neutral-block": 0.11623104684597198,
+     "kkpipi-charged-block": 0.04603733521642253,
+     "kkpipi-neutral-block": 0.008978860213164748,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953832157,
+     "four-pion-neutral-block": 0.09408571471805766,
+     "kkpipi-charged-block": 0.03928459350137559,
+     "kkpipi-neutral-block": 0.007733021994508392,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-06-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932636182637, 0.0],
+     [-0.8794264687663749, -0.8436415147338324],
+     [-4.983229649111923, 3.5133820235465834]
+    ],
+    "four-pion-neutral-block": [
+     [2.5568759798319167, 0.0],
+     [-0.8749644382446672, -0.12437030049134762],
+     [-3.4586670593999167, 2.0302156948430174]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742036851, 0.0],
+     [-0.010341488302448298, -0.028096704357980146],
+     [0.21527536265442523, 0.349081039356828]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1321325755949412, 0.0],
+     [0.0007185918177221325, 0.0007619783928456247],
+     [0.05043131150579262, -0.15774185683486153]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514925833,
+     "four-pion-neutral-block": 0.11579171702351504,
+     "kkpipi-charged-block": 0.04603733521641229,
+     "kkpipi-neutral-block": 0.008978860213225907,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953863081,
+     "four-pion-neutral-block": 0.09484246905856396,
+     "kkpipi-charged-block": 0.03928459350142318,
+     "kkpipi-neutral-block": 0.007733021994526184,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-07-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.3897247545607563, 0.0],
+     [-0.7735239628599535, -0.7991179263535363],
+     [-5.101097299711384, 3.388047470022938]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.1179197049336016, 0.0],
+     [-0.010446720577320804, -0.028074036774970813],
+     [0.21643483306387284, 0.34912398935155636]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13212030107068778, 0.0],
+     [0.0007193591899776379, 0.000762488066771857],
+     [0.050428343559656065, -0.15779702752167793]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08176682722897294,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.046074397497613044,
+     "kkpipi-neutral-block": 0.008981706899507426,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06758469019894525,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.03932384133737037,
+     "kkpipi-neutral-block": 0.00773593280828707,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-07-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.6886617726756077, 0.0],
+     [-0.9853289746728109, -0.8881651031159804],
+     [-4.865361998512462, 3.6387165770697534]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11686044990757316, 0.0],
+     [-0.010236256027369937, -0.028119371941017483],
+     [0.21411589224476751, 0.3490380893616846]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13214485011864535, 0.0],
+     [0.0007178244454852682, 0.0007614687189256636],
+     [0.05043427945190313, -0.15768668614787182]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08115592971581011,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04600117432487397,
+     "kkpipi-neutral-block": 0.008976018058745787,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.0676238328381594,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.03924604692512169,
+     "kkpipi-neutral-block": 0.007730114746217299,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-08-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05971753708665001, 0.0],
+     [0.8547907546856606, -0.33349826366073454]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11613782888277209, 0.0],
+     [1.7456835889602917, -0.5108767664534968]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.04377007055992886,
+     "six-pion-neutral-block": 0.16338637932614986,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04230499708604769,
+     "six-pion-neutral-block": 0.15927675740907432,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-08-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05941407231412349, 0.0],
+     [0.8506184097359282, -0.3321504244638982]
+    ],
+    "six-pion-neutral-block": [
+     [-0.10832879182705342, 0.0],
+     [1.6489411321650618, -0.6260092037155178]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.04337532149164045,
+     "six-pion-neutral-block": 0.16841910506369018,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.041917917619865463,
+     "six-pion-neutral-block": 0.16065379223551723,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-09-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.156550526025018, 0.0],
+     [0.5493065588246261, 0.16745140762987654],
+     [4.75661850417195, 1.0349040384899681]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.00621323324524106
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004583712520563465
+    }
+   ]
+  },
+  "coefficient-eigenmode-09-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.077824607051109, 0.0],
+     [0.512656573240671, 0.16818208486044733],
+     [4.793834766590095, 1.0289361463420197]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.005985867625717781
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004456519278500565
+    }
+   ]
+  },
+  "coefficient-eigenmode-10-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932636176895, 0.0],
+     [-0.8794264687665474, -0.8436415147403918],
+     [-4.983229649111894, 3.5133820235447675]
+    ],
+    "four-pion-neutral-block": [
+     [1.995402757271935, 0.0],
+     [-0.5890774922048657, -0.06909876552542057],
+     [-3.631777020930593, 1.62685925467341]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007741739238, 0.0],
+     [-0.010341488302797288, -0.028096704358191733],
+     [0.21527536265610034, 0.34908103935992496]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257558005248, 0.0],
+     [0.0007185918176834662, 0.0007619783928452302],
+     [0.05043131151232787, -0.15774185682701422]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514835644,
+     "four-pion-neutral-block": 0.11352370959990188,
+     "kkpipi-charged-block": 0.04603733521783699,
+     "kkpipi-neutral-block": 0.008978860213384671,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953749763,
+     "four-pion-neutral-block": 0.09166059255754762,
+     "kkpipi-charged-block": 0.03928459350273223,
+     "kkpipi-neutral-block": 0.00773302199464158,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-10-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932636186745, 0.0],
+     [-0.879426468766217, -0.8436415147291249],
+     [-4.983229649111952, 3.513382023547924]
+    ],
+    "four-pion-neutral-block": [
+     [1.9896476054138554, 0.0],
+     [-0.5366943944869226, -0.07716260082435134],
+     [-3.6630557522024896, 1.6947697396571209]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742378238, 0.0],
+     [-0.010341488301893452, -0.028096704357796563],
+     [0.21527536265254002, 0.349081039353316]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257560928066, 0.0],
+     [0.00071859181777944, 0.0007619783928522905],
+     [0.05043131149923133, -0.15774185684253553]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514996663,
+     "four-pion-neutral-block": 0.11498689538212101,
+     "kkpipi-charged-block": 0.046037335214939995,
+     "kkpipi-neutral-block": 0.008978860212977065,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953945476,
+     "four-pion-neutral-block": 0.0930147670985292,
+     "kkpipi-charged-block": 0.03928459350006653,
+     "kkpipi-neutral-block": 0.0077330219943929895,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-11-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.522861198969332, 0.0],
+     [-0.8708344955621334, -0.8516473991764477],
+     [-4.99622435061749, 3.5495074965711972]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813429223, 0.0],
+     [-0.5628859433460558, -0.07313068317485075],
+     [-3.6474163865664333, 1.660814497165037]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11877965432559155, 0.0],
+     [-0.010332447950899425, -0.028140187371529183],
+     [0.21588575873784804, 0.35063981947885364]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1325443566543807, 0.0],
+     [0.0007187050072604824, 0.0007616670899971126],
+     [0.05026418841731897, -0.15811895575629278]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08055827543720237,
+     "four-pion-neutral-block": 0.11394062851199707,
+     "kkpipi-charged-block": 0.046154318383321305,
+     "kkpipi-neutral-block": 0.008985817398246413,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06698550633759556,
+     "four-pion-neutral-block": 0.09212752011663479,
+     "kkpipi-charged-block": 0.039410515294155506,
+     "kkpipi-neutral-block": 0.007741287980530946,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-11-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.555525328267032, 0.0],
+     [-0.888018441970631, -0.835635630293069],
+     [-4.970234947606356, 3.4772565505214943]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428682, 0.0],
+     [-0.5628859433457325, -0.07313068317492116],
+     [-3.647416386566649, 1.660814497165494]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11600050051558321, 0.0],
+     [-0.010350528653791316, -0.028053221344459114],
+     [0.21466496657079231, 0.34752225923438734]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13172079453495245, 0.0],
+     [0.0007184786282024237, 0.0007622896957004081],
+     [0.050598434594240224, -0.15736475791325696]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08142207341218151,
+     "four-pion-neutral-block": 0.11394062851200179,
+     "kkpipi-charged-block": 0.045920585745154424,
+     "kkpipi-neutral-block": 0.008971907786571576,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06752853632042988,
+     "four-pion-neutral-block": 0.09212752011663951,
+     "kkpipi-charged-block": 0.03915898623060204,
+     "kkpipi-neutral-block": 0.0077247658020453604,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-12-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5393953709470183, 0.0],
+     [-0.8795330666748625, -0.8435418190699008],
+     [-4.983068897611245, 3.512938471236386]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813448794, 0.0],
+     [-0.5628859433538071, -0.07313068317262884],
+     [-3.6474163865604345, 1.6608144971527108]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11736945232539185, 0.0],
+     [-0.01034172609633716, -0.028096744176689614],
+     [0.21526894172993427, 0.3490643134087531]
+    ],
+    "kkpipi-neutral-block": [
+     [0.16920445378882934, 0.0],
+     [0.0005034634701454314, 0.0005929569666909237],
+     [0.03783498447895406, -0.173163042301265]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099552441856164,
+     "four-pion-neutral-block": 0.11394062851182371,
+     "kkpipi-charged-block": 0.04603769921252511,
+     "kkpipi-neutral-block": 0.008870391086952137,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.0672599911322198,
+     "four-pion-neutral-block": 0.09212752011657707,
+     "kkpipi-charged-block": 0.039284465015554874,
+     "kkpipi-neutral-block": 0.007665416005677712,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-12-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5389911562893457, 0.0],
+     [-0.8793198708579019, -0.8437412103996159],
+     [-4.983390400612601, 3.5138255758563055]
+    ],
+    "four-pion-neutral-block": [
+     [1.992525181340911, 0.0],
+     [-0.5628859433379811, -0.07313068317714307],
+     [-3.647416386572648, 1.66081449717782]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11741070251578291, 0.0],
+     [-0.010341250508353581, -0.028096664539298682],
+     [0.2152817835787061, 0.3490977653044879]
+    ],
+    "kkpipi-neutral-block": [
+     [0.0950606974005038, 0.0],
+     [0.0009337201653174747, 0.000930999819006597],
+     [0.06302763853260514, -0.14232067136828475]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08098458592610253,
+     "four-pion-neutral-block": 0.11394062851205954,
+     "kkpipi-charged-block": 0.04603697123086296,
+     "kkpipi-neutral-block": 0.009259913295203499,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725292810683757,
+     "four-pion-neutral-block": 0.09212752011669725,
+     "kkpipi-charged-block": 0.03928472200479386,
+     "kkpipi-neutral-block": 0.0078901790059596,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-13-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05830427503153813, 0.0],
+     [0.8368978208765553, -0.3334455456129415]
+    ],
+    "six-pion-neutral-block": [
+     [-0.10879875133072002, 0.0],
+     [1.6708432409534986, -0.5453999128381484]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.04264831270321484,
+     "six-pion-neutral-block": 0.1604796607111026,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.0411089497459724,
+     "six-pion-neutral-block": 0.1544289114330944,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-13-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.06082733436923537, 0.0],
+     [0.8685113435450335, -0.33220314251169125]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11566786937910549, 0.0],
+     [1.723781480171855, -0.5914860573308662]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.044511432533948056,
+     "six-pion-neutral-block": 0.17068083111856336,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04312995181448676,
+     "six-pion-neutral-block": 0.16499356955918312,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-14-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05804807720031134, 0.0],
+     [0.8339363786083557, -0.35511189880462646]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11339852687904237, 0.0],
+     [1.7042148919141886, -0.573898781196712]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.04440105880272923,
+     "six-pion-neutral-block": 0.16640484564926716,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04251097435827572,
+     "six-pion-neutral-block": 0.16071753374312314,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-14-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.06108353220046216, 0.0],
+     [0.8714727858132331, -0.3105367893200063]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11106809383078314, 0.0],
+     [1.690409829211165, -0.5629871889723026]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.042863903825563154,
+     "six-pion-neutral-block": 0.16460868519061223,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.041809502279974375,
+     "six-pion-neutral-block": 0.1585675769579735,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-15-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932636198034, 0.0],
+     [-0.8794264687651394, -0.8436415147200225],
+     [-4.983229649111929, 3.5133820235506508]
+    ],
+    "four-pion-neutral-block": [
+     [2.007198547940345, 0.0],
+     [-0.5428635116583856, -0.06693047032566243],
+     [-3.6383350635420064, 1.6515325757500519]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007743712089, 0.0],
+     [-0.010341488301118227, -0.028096704358026015],
+     [0.21527536264219943, 0.3490810393329479]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1321325755942239, 0.0],
+     [0.0007185918180213826, 0.0007619783930414963],
+     [0.050431311506921886, -0.15774185683311148]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005515253684,
+     "four-pion-neutral-block": 0.11517728851057497,
+     "kkpipi-charged-block": 0.04603733520546086,
+     "kkpipi-neutral-block": 0.008978860213121411,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645954133108,
+     "four-pion-neutral-block": 0.09276156791016907,
+     "kkpipi-charged-block": 0.039284593491975175,
+     "kkpipi-neutral-block": 0.007733021994472283,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-15-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932636165606, 0.0],
+     [-0.879426468767625, -0.8436415147494942],
+     [-4.983229649111917, 3.5133820235420408]
+    ],
+    "four-pion-neutral-block": [
+     [1.9778518147454454, 0.0],
+     [-0.5829083750334026, -0.07933089602410948],
+     [-3.656497709591076, 1.670096418580479]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007740405387, 0.0],
+     [-0.010341488303572514, -0.02809670435796228],
+     [0.21527536266644093, 0.3490810393802931]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559510924, 0.0],
+     [0.0007185918174415235, 0.0007619783926560243],
+     [0.05043131150463731, -0.15774185683643827]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.0809900551460175,
+     "four-pion-neutral-block": 0.11367244495965813,
+     "kkpipi-charged-block": 0.04603733522725829,
+     "kkpipi-neutral-block": 0.008978860213254787,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953562127,
+     "four-pion-neutral-block": 0.09215609981091138,
+     "kkpipi-charged-block": 0.03928459351082357,
+     "kkpipi-neutral-block": 0.007733021994562291,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-16-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.061131741109981784, 0.0],
+     [0.8617894782797016, -0.3421832300757188]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11035248578348138, 0.0],
+     [1.6942452285076692, -0.5661811158397702]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.044441866519588466,
+     "six-pion-neutral-block": 0.16690247162777763,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.043052860725640026,
+     "six-pion-neutral-block": 0.16036784238820728,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-16-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05799986829079171, 0.0],
+     [0.8436196861418871, -0.3234654580489139]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11411413492634413, 0.0],
+     [1.7003794926176843, -0.5707048543292444]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.042728125633739907,
+     "six-pion-neutral-block": 0.164119853902093,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.041192114185324875,
+     "six-pion-neutral-block": 0.15891925709565388,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-17-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539207966357903, 0.0],
+     [-0.8794367356093623, -0.8436022806730384],
+     [-4.983219464138665, 3.513363523663551]
+    ],
+    "four-pion-neutral-block": [
+     [1.992525181343084, 0.0],
+     [-0.5628859433459442, -0.07313068317294062],
+     [-3.6474163865663756, 1.6608144971651213]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11723816170758387, 0.0],
+     [-0.010347674822254092, -0.028110605394077816],
+     [0.21529966710420254, 0.3490946373730016]
+    ],
+    "kkpipi-neutral-block": [
+     [0.12796271966141093, 0.0],
+     [0.0010096958184592217, 0.0008674538844765365],
+     [0.04725975896612578, -0.16517931089573518]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099387783019377,
+     "four-pion-neutral-block": 0.11394062851246303,
+     "kkpipi-charged-block": 0.046085810874913834,
+     "kkpipi-neutral-block": 0.009031601322525548,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.0672610023478057,
+     "four-pion-neutral-block": 0.09212752011733204,
+     "kkpipi-charged-block": 0.039321898564804524,
+     "kkpipi-neutral-block": 0.007870869995686711,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-17-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539178560878461, 0.0],
+     [-0.8794162019234021, -0.8436807487964783],
+     [-4.983239834085181, 3.5134005234291403]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813427065, 0.0],
+     [-0.5628859433458441, -0.07313068317683129],
+     [-3.647416386566707, 1.6608144971654095]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11754199313359089, 0.0],
+     [-0.010335301782436648, -0.02808280332191048],
+     [0.21525105820443782, 0.34906744134023937]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1363024315279222, 0.0],
+     [0.0004274878170036844, 0.0006565029012209841],
+     [0.053602864045433414, -0.15030440277381457]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08098623381929088,
+     "four-pion-neutral-block": 0.11394062851107324,
+     "kkpipi-charged-block": 0.045988884857154085,
+     "kkpipi-neutral-block": 0.009060049383147195,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725191761251116,
+     "four-pion-neutral-block": 0.09212752011594225,
+     "kkpipi-charged-block": 0.03924730660074844,
+     "kkpipi-neutral-block": 0.007700384897610899,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-18-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5390227826313945, 0.0],
+     [-0.8792952915913215, -0.8442446744686661],
+     [-4.9833411811678365, 3.5135487100776106]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813429055, 0.0],
+     [-0.5628859433457563, -0.07313068317525889],
+     [-3.6474163865665736, 1.6608144971653314]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11100639073467655, 0.0],
+     [-0.010536141228703779, -0.028107243149808545],
+     [0.2142198868125296, 0.34479621309759007]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1321770685354473, 0.0],
+     [0.0007149776875370374, 0.0007608759603507391],
+     [0.050476731396276654, -0.15767130464096477]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08093096756673224,
+     "four-pion-neutral-block": 0.11394062851151675,
+     "kkpipi-charged-block": 0.046428377911855646,
+     "kkpipi-neutral-block": 0.008981066491304753,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.0671849153956688,
+     "four-pion-neutral-block": 0.09212752011650141,
+     "kkpipi-charged-block": 0.03950252241771,
+     "kkpipi-neutral-block": 0.007733843042487206,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-18-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5393637446049695, 0.0],
+     [-0.8795576459414429, -0.8430383550008506],
+     [-4.9831181170560095, 3.513215337015081]
+    ],
+    "four-pion-neutral-block": [
+     [1.992525181342885, 0.0],
+     [-0.562885943346032, -0.07313068317451302],
+     [-3.647416386566509, 1.6608144971651995]
+    ],
+    "kkpipi-charged-block": [
+     [-0.12377376410649821, 0.0],
+     [-0.010146835375986962, -0.028086165566179752],
+     [0.21633083849611076, 0.3533658656156509]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13208808265388583, 0.0],
+     [0.0007222059479258687, 0.0007630808253467816],
+     [0.05038589161528254, -0.15781240902858498]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08104949317342103,
+     "four-pion-neutral-block": 0.11394062851213523,
+     "kkpipi-charged-block": 0.04564872577825667,
+     "kkpipi-neutral-block": 0.008976668204891597,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06732823484780655,
+     "four-pion-neutral-block": 0.09212752011677294,
+     "kkpipi-charged-block": 0.039069033802100125,
+     "kkpipi-neutral-block": 0.007732212267872484,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-19-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1184506859673227, 0.0],
+     [0.5281581762082668, 0.16657595851958037],
+     [4.775063080955408, 1.0314246844612536]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006080364540433174
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004474611740789652
+    }
+   ]
+  },
+  "coefficient-eigenmode-19-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1159244471088043, 0.0],
+     [0.5338049558570304, 0.1690575339707435],
+     [4.775390189806637, 1.0324155003707343]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006097717748220708
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004544868961344993
+    }
+   ]
+  },
+  "coefficient-eigenmode-20-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.06017715524648612, 0.0],
+     [0.8528523726210271, -0.33298892419621257]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11502590211213391, 0.0],
+     [1.6969378153928005, -0.5683265714634803]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.04322781254190568,
+     "six-pion-neutral-block": 0.16181310030193327,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04188711926288339,
+     "six-pion-neutral-block": 0.15714523766315355,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-20-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05895445415428738, 0.0],
+     [0.8525567918005617, -0.33265976392842017]
+    ],
+    "six-pion-neutral-block": [
+     [-0.1094407185976916, 0.0],
+     [1.697686905732553, -0.5685593987055343]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.04391995238801024,
+     "six-pion-neutral-block": 0.1692572042475044,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04233696290730919,
+     "six-pion-neutral-block": 0.16216912815523535,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-21-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5392039167390554, 0.0],
+     [-0.8790062526048762, -0.8461728816562917],
+     [-4.983154306937597, 3.5127541617762934]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813445166, 0.0],
+     [-0.5628859433429118, -0.07313068319258391],
+     [-3.6474163865649754, 1.6608144971620602]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11793485297805552, 0.0],
+     [-0.01029327701614573, -0.028037263771017885],
+     [0.21503213523568845, 0.3486685063184093]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1321086293028851, 0.0],
+     [0.0007265708076192596, 0.0007611023830665949],
+     [0.050311471430483735, -0.15770210323050407]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08083550153572834,
+     "four-pion-neutral-block": 0.11394062850219899,
+     "kkpipi-charged-block": 0.04577866345287547,
+     "kkpipi-neutral-block": 0.00896136232224213,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06700391802432129,
+     "four-pion-neutral-block": 0.09212752010972791,
+     "kkpipi-charged-block": 0.039071337704302204,
+     "kkpipi-neutral-block": 0.007718573930571059,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-21-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391826104973085, 0.0],
+     [-0.8798466849278882, -0.841110147813225],
+     [-4.983304991286249, 3.514009885316398]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813412739, 0.0],
+     [-0.5628859433488765, -0.073130683157188],
+     [-3.647416386568107, 1.6608144971684706]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11684530186311924, 0.0],
+     [-0.01038969958854501, -0.028156144944970412],
+     [0.2155185900729519, 0.3494935723948317]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13215652188644803, 0.0],
+     [0.0007106128278436465, 0.0007628544026309258],
+     [0.05055115158107546, -0.15778161043904568]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08115254777191733,
+     "four-pion-neutral-block": 0.11394062852087468,
+     "kkpipi-charged-block": 0.04629674206257705,
+     "kkpipi-neutral-block": 0.008996374969248454,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06751434660016577,
+     "four-pion-neutral-block": 0.09212752012354637,
+     "kkpipi-charged-block": 0.039498431146860274,
+     "kkpipi-neutral-block": 0.00774748410742058,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-22-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932636389996, 0.0],
+     [-0.879426468705, -0.8436415149450346],
+     [-4.983229649096979, 3.5133820234858617]
+    ],
+    "four-pion-neutral-block": [
+     [1.9923913026239395, 0.0],
+     [-0.5631306557020205, -0.07132198593473381],
+     [-3.647564093840917, 1.6611386479855548]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007702119326, 0.0],
+     [-0.010341488354491404, -0.028096704414193208],
+     [0.21527536294000024, 0.349081039912772]
+    ],
+    "kkpipi-neutral-block": [
+     [0.132132575635084, 0.0],
+     [0.0007185917915684773, 0.0007619783991310321],
+     [0.050431311791557465, -0.15774185697049775]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005515162319,
+     "four-pion-neutral-block": 0.11489832431883829,
+     "kkpipi-charged-block": 0.0460373354690865,
+     "kkpipi-neutral-block": 0.008978860254419102,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645952804307,
+     "four-pion-neutral-block": 0.09283159797507423,
+     "kkpipi-charged-block": 0.03928459371523958,
+     "kkpipi-neutral-block": 0.0077330220297201265,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-22-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932635973644, 0.0],
+     [-0.8794264688277644, -0.8436415145244821],
+     [-4.983229649126867, 3.51338202360683]
+    ],
+    "four-pion-neutral-block": [
+     [1.992659060061851, 0.0],
+     [-0.5626412309897678, -0.0749393804150381],
+     [-3.6472686792921656, 1.660490346344976]
+    ],
+    "kkpipi-charged-block": [
+     [-0.1173900778199815, 0.0],
+     [-0.010341488250199336, -0.02809670430179509],
+     [0.21527536236864012, 0.349081038800469]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257555424915, 0.0],
+     [0.0007185918438944288, 0.0007619783865664885],
+     [0.05043131122000173, -0.157741856699052]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514589029,
+     "four-pion-neutral-block": 0.11298694161702852,
+     "kkpipi-charged-block": 0.04603733496357486,
+     "kkpipi-neutral-block": 0.00897886017194264,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645954890927,
+     "four-pion-neutral-block": 0.09142614034523969,
+     "kkpipi-charged-block": 0.0392845932875592,
+     "kkpipi-neutral-block": 0.007733021959314449,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-23-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539249065346343, 0.0],
+     [-0.8792829105126434, -0.8440128988245712],
+     [-4.983197008687533, 3.513276431338761]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813989768, 0.0],
+     [-0.5628859432436303, -0.07313068392109244],
+     [-3.6474163865051277, 1.6608144970310954]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11667965423974692, 0.0],
+     [-0.010434936028163144, -0.02821852829344573],
+     [0.21578490913287682, 0.35007187374506477]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13226379684311793, 0.0],
+     [0.0006296475582221839, 0.0007886200863471536],
+     [0.05139675613478695, -0.15821367135977454]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08101415736159824,
+     "four-pion-neutral-block": 0.11394062811753733,
+     "kkpipi-charged-block": 0.04649575905346569,
+     "kkpipi-neutral-block": 0.009116460711010677,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725150567802952,
+     "four-pion-neutral-block": 0.0921275198266054,
+     "kkpipi-charged-block": 0.03966909150051383,
+     "kkpipi-neutral-block": 0.007851264897299074,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-23-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539137461890021, 0.0],
+     [-0.879570027020121, -0.8432701306449455],
+     [-4.983262289536313, 3.5134876157539305]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251812868137, 0.0],
+     [-0.562885943448158, -0.07313068242867947],
+     [-3.6474163866279548, 1.6608144972994354]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11810050060142784, 0.0],
+     [-0.010248040576527596, -0.027974880422542567],
+     [0.21476581617576354, 0.3480902049681762]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1320013543462152, 0.0],
+     [0.0008075360772407223, 0.0007353366993503671],
+     [0.04946586687677225, -0.1572700423097752]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08096615714344509,
+     "four-pion-neutral-block": 0.11394062890646153,
+     "kkpipi-charged-block": 0.045581214042900574,
+     "kkpipi-neutral-block": 0.008842328561326567,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06726155128184481,
+     "four-pion-neutral-block": 0.0921275204066689,
+     "kkpipi-charged-block": 0.03890197868562506,
+     "kkpipi-neutral-block": 0.007615679028546281,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-24-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539147093560129, 0.0],
+     [-0.8795296385164688, -0.8434709059009806],
+     [-4.983251529376031, 3.5134298509057698]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813286176, 0.0],
+     [-0.5628859433717976, -0.07313068298990971],
+     [-3.647416386581986, 1.6608144971987442]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11790410063611834, 0.0],
+     [-0.010263273072998153, -0.028022990318861265],
+     [0.21491560427969414, 0.34838108351468067]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13227027935850963, 0.0],
+     [0.0006046965138026752, 0.000801579368579487],
+     [0.051521177004896626, -0.15830006412687367]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08095842019013094,
+     "four-pion-neutral-block": 0.11394062860973478,
+     "kkpipi-charged-block": 0.04573112177295142,
+     "kkpipi-neutral-block": 0.009129270789478996,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06724454530513463,
+     "four-pion-neutral-block": 0.09212752018858293,
+     "kkpipi-charged-block": 0.039022885429861695,
+     "kkpipi-neutral-block": 0.007864259421758859,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-24-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539239433676235, 0.0],
+     [-0.8793232990162956, -0.8438121235685361],
+     [-4.983207768847815, 3.5133341961869218]
+    ],
+    "four-pion-neutral-block": [
+     [1.992525181357173, 0.0],
+     [-0.5628859433199906, -0.0731306833598622],
+     [-3.6474163865510962, 1.6608144971317866]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11687605420505642, 0.0],
+     [-0.010419703531692588, -0.028170418397127032],
+     [0.21563512102894622, 0.3497809951985603]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1319948718308235, 0.0],
+     [0.000832487121660231, 0.0007223774171180336],
+     [0.04934144600666257, -0.15718364954267608]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08102174497156232,
+     "four-pion-neutral-block": 0.11394062841380154,
+     "kkpipi-charged-block": 0.046344598880874256,
+     "kkpipi-neutral-block": 0.008829772295727368,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06726841088723207,
+     "four-pion-neutral-block": 0.0921275200446914,
+     "kkpipi-charged-block": 0.03954718705747429,
+     "kkpipi-neutral-block": 0.007602904324557599,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-25-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5397497668690643, 0.0],
+     [-0.8783953112274544, -0.8434658902108294],
+     [-4.98305845570291, 3.5134908680492876]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813415972, 0.0],
+     [-0.56288594334823, -0.0731306831593162],
+     [-3.6474163865678912, 1.660814497168124]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11743303610164303, 0.0],
+     [-0.010332921547320115, -0.028088463323387183],
+     [0.21524000610894908, 0.3490098494594997]
+    ],
+    "kkpipi-neutral-block": [
+     [0.1321337191305871, 0.0],
+     [0.0007170734052772542, 0.0007626564590661417],
+     [0.05044161348096888, -0.15774751970106374]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08158435357172414,
+     "four-pion-neutral-block": 0.11394062852026451,
+     "kkpipi-charged-block": 0.04600954149967931,
+     "kkpipi-neutral-block": 0.008980089850066526,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06767723052388551,
+     "four-pion-neutral-block": 0.0921275201227049,
+     "kkpipi-charged-block": 0.03926056553605834,
+     "kkpipi-neutral-block": 0.0077341578119990186,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-25-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5386367603672997, 0.0],
+     [-0.88045762630531, -0.8438171392586873],
+     [-4.983400842520936, 3.513273179043404]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813441933, 0.0],
+     [-0.5628859433435583, -0.07313068319045571],
+     [-3.647416386565191, 1.6608144971624068]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11734711873953173, 0.0],
+     [-0.010350055057370626, -0.028104945392601114],
+     [0.21531071919969128, 0.3491522292537413]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213143205874603, 0.0],
+     [0.0007201102301856519, 0.000761300326631379],
+     [0.05042100953059032, -0.157736193968486]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08039789820279634,
+     "four-pion-neutral-block": 0.11394062850338744,
+     "kkpipi-charged-block": 0.04606513745385837,
+     "kkpipi-neutral-block": 0.008977630683706798,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06683714870621076,
+     "four-pion-neutral-block": 0.09212752011056942,
+     "kkpipi-charged-block": 0.03930862887068614,
+     "kkpipi-neutral-block": 0.00773188626827807,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-26-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.060673084613684564, 0.0],
+     [0.8525519477596402, -0.33276300720761676]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11200984128023601, 0.0],
+     [1.6973597346218279, -0.5684643040914932]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.042872904557510694,
+     "six-pion-neutral-block": 0.16580615452443614,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.041639247777192114,
+     "six-pion-neutral-block": 0.15984450236893186,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-26-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.058458524787088934, 0.0],
+     [0.8528572166619486, -0.332885680917016]
+    ],
+    "six-pion-neutral-block": [
+     [-0.1124567794295895, 0.0],
+     [1.6972649865035256, -0.5684216660775214]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.04428238048044512,
+     "six-pion-neutral-block": 0.16519884483003175,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04258915099425181,
+     "six-pion-neutral-block": 0.15943240162607708,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-27-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1170859993976174, 0.0],
+     [0.5312386447882983, 0.16715322659434553],
+     [4.775265916713552, 1.0318448764889072]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.00600689604224386
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004452674303832697
+    }
+   ]
+  },
+  "coefficient-eigenmode-27-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.539193263618182, 0.0],
+     [-0.8794264687663822, -0.8436415147347583],
+     [-4.983229649111923, 3.5133820235463458]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428952, 0.0],
+     [-0.5628859433458941, -0.07313068317488595],
+     [-3.647416386566541, 1.6608144971652654]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739007742058738, 0.0],
+     [-0.01034148830234537, -0.02809670435799415],
+     [0.21527536265432018, 0.3490810393566205]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213257559466657, 0.0],
+     [0.0007185918177314531, 0.0007619783928487603],
+     [0.0504313115057796, -0.15774185683477487]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1172891336785096, 0.0],
+     [0.5307244872769988, 0.16848026589597834],
+     [4.775187354048493, 1.0319953083430806]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005514933502,
+     "four-pion-neutral-block": 0.11394062851199944,
+     "kkpipi-charged-block": 0.04603733521633065,
+     "kkpipi-neutral-block": 0.008978860213166415,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.0061590952967950875
+    },
+    {
+     "four-pion-charged-block": 0.06725645953847621,
+     "four-pion-neutral-block": 0.09212752011663716,
+     "kkpipi-charged-block": 0.039284593501399366,
+     "kkpipi-neutral-block": 0.007733021994517288,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004558480465161238
+    }
+   ]
+  },
+  "coefficient-eigenmode-28-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391933703200036, 0.0],
+     [-0.8794263067072118, -0.8436409357070909],
+     [-4.983229642264059, 3.513382226976958]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813429463, 0.0],
+     [-0.5628859433458016, -0.07313068317552934],
+     [-3.6474163865664866, 1.6608144971651484]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739279988219019, 0.0],
+     [-0.010563851566967944, -0.027933730382774732],
+     [0.2152496718871848, 0.3490929418115853]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213262970222914, 0.0],
+     [0.0007130766526972547, 0.0007665807606963875],
+     [0.05043276593408507, -0.15774289287807708]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099022776882993,
+     "four-pion-neutral-block": 0.11394062851151772,
+     "kkpipi-charged-block": 0.04569779132169991,
+     "kkpipi-neutral-block": 0.008976050223923988,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725661270223779,
+     "four-pion-neutral-block": 0.09212752011638672,
+     "kkpipi-charged-block": 0.03908284662558721,
+     "kkpipi-neutral-block": 0.007731419748027601,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-28-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391931569163604, 0.0],
+     [-0.8794266308255526, -0.8436420937624258],
+     [-4.983229655959787, 3.5133818201157334]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428442, 0.0],
+     [-0.5628859433459867, -0.07313068317424257],
+     [-3.647416386566596, 1.6608144971653824]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11738735495898457, 0.0],
+     [-0.010119125037722797, -0.028259678333213564],
+     [0.21530105342145556, 0.3490691369016557]
+    ],
+    "kkpipi-neutral-block": [
+     [0.132132521487104, 0.0],
+     [0.0007241069827656514, 0.0007573760250011331],
+     [0.050429857077474126, -0.15774082079147267]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08098988252981766,
+     "four-pion-neutral-block": 0.11394062851224988,
+     "kkpipi-charged-block": 0.04637820528087512,
+     "kkpipi-neutral-block": 0.00898167098808716,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725630637503911,
+     "four-pion-neutral-block": 0.0921275201168876,
+     "kkpipi-charged-block": 0.03948699548444066,
+     "kkpipi-neutral-block": 0.0077346246165749775,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-29-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391933671774263, 0.0],
+     [-0.8794263120352509, -0.8436409413028159],
+     [-4.983229643051697, 3.51338222500158]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428035, 0.0],
+     [-0.562885943346057, -0.073130683173804],
+     [-3.6474163865666367, 1.6608144971654668]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11740599169432293, 0.0],
+     [-0.010469330193484531, -0.028272719205148542],
+     [0.21525985247983728, 0.3490673184399313]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213258567864508, 0.0],
+     [0.0007203617862549222, 0.0007597302276810688],
+     [0.05043119923573375, -0.15774174020884982]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099022400642157,
+     "four-pion-neutral-block": 0.11394062851207445,
+     "kkpipi-charged-block": 0.045930537007365636,
+     "kkpipi-neutral-block": 0.008980258071960883,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725660977851042,
+     "four-pion-neutral-block": 0.09212752011705912,
+     "kkpipi-charged-block": 0.03920054872213028,
+     "kkpipi-neutral-block": 0.007733859151869882,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-29-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391931600589377, 0.0],
+     [-0.8794266254975135, -0.8436420881667008],
+     [-4.983229655172149, 3.5133818220911115]
+    ],
+    "four-pion-neutral-block": [
+     [1.992525181342987, 0.0],
+     [-0.5628859433457313, -0.07313068317596791],
+     [-3.6474163865664457, 1.660814497165064]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11737416314685183, 0.0],
+     [-0.01021364641120621, -0.027920689510839754],
+     [0.21529087282880308, 0.3490947602733097]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213256551068805, 0.0],
+     [0.000716821849207984, 0.0007642265580164519],
+     [0.05043142377582545, -0.15774197346069993]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08098988629140853,
+     "four-pion-neutral-block": 0.1139406285111149,
+     "kkpipi-charged-block": 0.046144958539065514,
+     "kkpipi-neutral-block": 0.008977462488280324,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725630929875855,
+     "four-pion-neutral-block": 0.09212752011621521,
+     "kkpipi-charged-block": 0.03936904502261963,
+     "kkpipi-neutral-block": 0.007732184902262373,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-30-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932636750094, 0.0],
+     [-0.8794264686805093, -0.8436415144173616],
+     [-4.983229649108737, 3.5133820236578495]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428997, 0.0],
+     [-0.5628859433458863, -0.07313068317493764],
+     [-3.6474163865665368, 1.6608144971652559]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739031120480403, 0.0],
+     [-0.010342613534622519, -0.028093599563196025],
+     [0.21527500856043436, 0.349080837921073]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213109559702052, 0.0],
+     [0.0007028578162007823, 0.0005754768404302574],
+     [0.0504342520399494, -0.1577455528985139]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005524187067,
+     "four-pion-neutral-block": 0.11394062851174798,
+     "kkpipi-charged-block": 0.04603462396589779,
+     "kkpipi-neutral-block": 0.009083530387940526,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645962129741,
+     "four-pion-neutral-block": 0.09212752011661698,
+     "kkpipi-charged-block": 0.03928310035014127,
+     "kkpipi-neutral-block": 0.007799043653516227,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-30-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932635613546, 0.0],
+     [-0.8794264688522551, -0.8436415150521551],
+     [-4.983229649115109, 3.513382023434842]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428908, 0.0],
+     [-0.562885943345902, -0.07313068317483427],
+     [-3.6474163865665457, 1.660814497165275]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11738984363637073, 0.0],
+     [-0.010340363070068222, -0.028099809152792272],
+     [0.215275716748206, 0.349081240792168]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213405559231262, 0.0],
+     [0.0007343258192621238, 0.0009484799452672632],
+     [0.0504283709716098, -0.15773816077103583]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005505564277,
+     "four-pion-neutral-block": 0.11394062851178831,
+     "kkpipi-charged-block": 0.046040046659320044,
+     "kkpipi-neutral-block": 0.008874782690718612,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.0672564594556549,
+     "four-pion-neutral-block": 0.09212752011665731,
+     "kkpipi-charged-block": 0.03928608674806947,
+     "kkpipi-neutral-block": 0.007667290875480307,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-31-minus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932638479737, 0.0],
+     [-0.8794264684196721, -0.8436415134401629],
+     [-4.983229649099612, 3.5133820240011455]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813428848, 0.0],
+     [-0.5628859433459126, -0.07313068317476383],
+     [-3.647416386566552, 1.660814497165288]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11739049926956988, 0.0],
+     [-0.010343130992712673, -0.028093748958398085],
+     [0.21527484372376826, 0.3490806294647835]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13213691059660507, 0.0],
+     [0.0008677096526177781, 0.0007496874045729511],
+     [0.05044478321539878, -0.15774438502758859]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005552637648,
+     "four-pion-neutral-block": 0.11394062851216272,
+     "kkpipi-charged-block": 0.046033896375249135,
+     "kkpipi-neutral-block": 0.009000861003225544,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645987492514,
+     "four-pion-neutral-block": 0.09212752011668478,
+     "kkpipi-charged-block": 0.03928260240536669,
+     "kkpipi-neutral-block": 0.007744232967453603,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  },
+  "coefficient-eigenmode-31-plus": {
+   "coefficients": {
+    "four-pion-charged-block": [
+     [3.5391932633883902, 0.0],
+     [-0.8794264691130923, -0.8436415160293538],
+     [-4.983229649124234, 3.513382023091546]
+    ],
+    "four-pion-neutral-block": [
+     [1.9925251813429057, 0.0],
+     [-0.5628859433458757, -0.07313068317500808],
+     [-3.6474163865665306, 1.6608144971652428]
+    ],
+    "kkpipi-charged-block": [
+     [-0.11738965557160488, 0.0],
+     [-0.010339845611978067, -0.028099659757590212],
+     [0.2152758815848721, 0.34908144924845746]
+    ],
+    "kkpipi-neutral-block": [
+     [0.13212824059272807, 0.0],
+     [0.000569473982845128, 0.0007742693811245696],
+     [0.050417839796160414, -0.15773932864196116]
+    ],
+    "six-pion-charged-block": [
+     [-0.05956580470038675, 0.0],
+     [0.8527045822107944, -0.33282434406231637]
+    ],
+    "six-pion-neutral-block": [
+     [-0.11223331035491275, 0.0],
+     [1.6973123605626768, -0.5684429850845073]
+    ],
+    "three-pion-block": [
+     [-2.1171875665380635, 0.0],
+     [0.5309815660326486, 0.16781674624516194],
+     [4.775226635381022, 1.031920092415994]
+    ]
+   },
+   "seam_simplex_controls": [
+    {
+     "four-pion-charged-block": 0.11726747025384707,
+     "four-pion-neutral-block": 0.17212095754427523,
+     "kkpipi-charged-block": 0.06367176950145509,
+     "kkpipi-neutral-block": 0.04673325817319066,
+     "six-pion-charged-block": 0.024486775253798523,
+     "six-pion-neutral-block": 0.10332221161340743,
+     "three-pion-block": 0.009191311569135822
+    },
+    {
+     "four-pion-charged-block": 0.10449252097535106,
+     "four-pion-neutral-block": 0.139885108600131,
+     "kkpipi-charged-block": 0.03929558168077507,
+     "kkpipi-neutral-block": 0.05027618079729887,
+     "six-pion-charged-block": 0.03963866780437186,
+     "six-pion-neutral-block": 0.14443274120566232,
+     "three-pion-block": 0.006933668615388776
+    },
+    {
+     "four-pion-charged-block": 0.08099005477171527,
+     "four-pion-neutral-block": 0.11394062851148921,
+     "kkpipi-charged-block": 0.04604077426852584,
+     "kkpipi-neutral-block": 0.008957247690833225,
+     "six-pion-charged-block": 0.043572471735933774,
+     "six-pion-neutral-block": 0.16550228422702332,
+     "three-pion-block": 0.006082758247467473
+    },
+    {
+     "four-pion-charged-block": 0.06725645920202722,
+     "four-pion-neutral-block": 0.09212752011658952,
+     "kkpipi-charged-block": 0.03928658470307452,
+     "kkpipi-neutral-block": 0.0077220024229194256,
+     "six-pion-charged-block": 0.04211123424011557,
+     "six-pion-neutral-block": 0.15963832821713686,
+     "three-pion-block": 0.004505414862784804
+    }
+   ]
+  }
+ }
+}
