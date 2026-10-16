@@ -8,8 +8,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install Python dependencies
-        run: python -m pip install numpy scipy numba sympy particle==1.0.1 pyhepmc
+      - name: Install exHad and its Python dependencies
+        run: |
+          python -m pip install -e .
+          python -m pip check
       - name: Check Python syntax
         run: python -m compileall -q exhad tools tests
       # Without a Pythia8.317 build the live physics tests (tests/test_physics.py) skip; see the physics job.
