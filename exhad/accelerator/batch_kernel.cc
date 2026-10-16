@@ -66,13 +66,14 @@ struct Source {
     rc.pythiaSets = settings;
     rc.pythiaSets.push_back("HadronLevel:mStringMin=1.0");
     light = spec.comp == VComponent::OMEGA || spec.comp == VComponent::RHO;
-    PythiaChain chain = makeChain(rc);
+    PythiaChain chain = makeChain(rc, false);
     had = std::move(chain.had);
     dec = std::move(chain.dec);
     chn = std::move(chain.chn);
     hooks->flav = &model->flav;
     had->setUserHooksPtr(hooks);
-    had->setFragmentationPtr(model);
+    hooks->owner = had.get();
+    hooks->model = model;
     if (!had->init()) throw std::runtime_error("string kernel initialization failed");
     symmetry = std::make_unique<DiscreteSymmetryFilter>(had->particleData, sourceQN(rc, rc.comp));
   }

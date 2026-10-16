@@ -225,10 +225,13 @@ class LowMassRates(unittest.TestCase):
         from exhad.models import model_info
         np.testing.assert_array_equal(exclusive.rates('dark-photon', 1.6995), exclusive.rates('dark-photon', 1.699))
         rows = exclusive.rows('alp-fermion')
-        held, bridged = exclusive.rates('alp-fermion', 1.91), exclusive.rates('alp-fermion', 1.9105)
-        hadronic = [row.has_hadrons for row in rows]
-        self.assertAlmostEqual(math.fsum(held[hadronic]), math.fsum(bridged[hadronic]), places=14)
-        self.assertNotEqual(held[[row.label for row in rows].index('ppbar')], bridged[[row.label for row in rows].index('ppbar')])
+        edge = 1.910 - 1e-9
+        below = exclusive.rates('alp-fermion', edge)
+        for row, rate in zip(rows, below):
+            self.assertAlmostEqual(rate, float(np.interp(edge, row.values[:, 0], row.values[:, 1])), places=14)
+        with self.assertRaises(ValueError):
+            exclusive.rates('alp-fermion', 1.910)
+        self.assertAlmostEqual(math.fsum(boson_rates('alp-fermion', 1.910, 'central')[2]), 1., places=14)
         for model in ('scalar-central', 'scalar-1809'):  # the two-meson and nucleon rows reach the outer owner at 2 GeV
             owners = model_info(model)['owner_probabilities']
             at_owner = {label: float(np.interp(2., owners['masses'], v)) for label, v in owners['probabilities'].items()}
@@ -698,7 +701,7 @@ class AlpFermionChargeMatching(unittest.TestCase):
                 self.assertAlmostEqual(target[charged] + target[neutral], proposal[charged] + proposal[neutral], places=12)
 
     def test_exclusive_boundary_is_retained(self):
-        self.assertEqual(self.matching.start, 1.911)
+        self.assertEqual(self.matching.start, 1.910)
         weights, _ = self.matching.at(self.matching.start)
         for family, entry in self.matching.families.items():
             proposal, _ = self.matching._proposal(entry, self.matching.start)
@@ -832,7 +835,7 @@ class PublicInterface(unittest.TestCase):
             if 'eventcalc_rows' in info:
                 self.assertEqual(sorted(row['authority_row_id'] for row in info['eventcalc_rows']),
                                  sorted(info['owner_probabilities']['probabilities']))
-        self.assertEqual(model_info('alp-fermion')['support_gev'], [1.911, 5.0])
+        self.assertEqual(model_info('alp-fermion')['support_gev'], [1.910, 5.0])
         self.assertEqual(model_info('scalar-central')['support_gev'], [2.0, 63.0])
 
     def test_default_mother_pdg(self):

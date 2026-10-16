@@ -24,7 +24,7 @@ renormalized away here; the tables themselves are not edited.
 
 The kinematics change at the start masses by construction: below, one tabulated channel with
 flat or |M|^2-weighted phase space and pole masses for the omega and phi; above, a fragmented
-Pythia state with resonance line shapes. exHad accepts that seam at 1.70, 1.911 and
+Pythia state with resonance line shapes. exHad accepts that seam at 1.70, 1.910 and
 2.0 GeV and does not blend the two descriptions.
 """
 from functools import lru_cache
@@ -38,7 +38,7 @@ from .full_decays import hnl_rates, interpolate, realize_rows, subseed, table
 from .models import SCALARS, eventcalc_tables
 
 # Start masses (models.model_info support_gev): exclusive rows below, matched generation from here.
-START = {'dark-photon': 1.7, 'alp-fermion': 1.911, 'b-l': 2., **dict.fromkeys(SCALARS, 2.)}
+START = {'dark-photon': 1.7, 'alp-fermion': 1.910, 'b-l': 2., **dict.fromkeys(SCALARS, 2.)}
 LEPTONIC = frozenset({11, 12, 13, 14, 15, 16, 22})
 HBARC_GEV_M = 1.973269804e-16
 

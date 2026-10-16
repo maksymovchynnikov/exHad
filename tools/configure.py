@@ -64,6 +64,22 @@ def verify_pythia_pins(prefix):
     return checked
 
 
+def toolchain(build):
+    """Use the same Pythia compiler/ABI and linker flags as the main binary."""
+    config = build.get('config')
+    if config:
+        def flags(option):
+            return shlex.split(subprocess.check_output([config, option], text=True))
+        cxxflags, ldflags = flags('--cxxflags'), flags('--ldflags')
+        includes = ['-I' + subprocess.check_output([config, '--includedir'], text=True).strip()]
+    else:
+        includes = ['-I' + str(Path(build['prefix']) / 'include')]
+        cxxflags = includes
+        ldflags = ['-L' + build['libdir'], '-Wl,-rpath,' + build['libdir'], '-lpythia8', '-ldl']
+    compiler = [*shlex.split(os.environ.get('CXX', 'c++')), *cxxflags, '-std=c++17', '-O2', '-pthread']
+    return compiler, [*includes, '-I' + str(ROOT / 'cpp/include')], [*ldflags, '-pthread']
+
+
 def build_accelerator(out, compiler, includes, link_pythia, prefix, config):
     """Build and gate `exhad-batch`; return its path once every gate passes."""
     from exhad.model1.sampler import load_deployment
@@ -77,7 +93,14 @@ def build_accelerator(out, compiler, includes, link_pythia, prefix, config):
     def run(args, **kw):
         args = list(map(str, args))
         commands.append(args)
-        return subprocess.run(args, cwd=ROOT, check=True, **kw)
+        try:
+            return subprocess.run(args, cwd=ROOT, check=True, **kw)
+        except subprocess.CalledProcessError as error:
+            # Captured audit output is otherwise hidden by the Python traceback.
+            for output in (error.stdout, error.stderr):
+                if output:
+                    print(output[-6000:], file=sys.stderr)
+            raise
 
     def compile_all(*jobs):  # independent compiler invocations, four at a time
         jobs = [list(map(str, job)) for job in jobs]
@@ -136,9 +159,7 @@ def configure():
     runtime = ROOT / '.runtime'
     runtime.mkdir(exist_ok=True)
     current = runtime / 'current.json'
-    compiler = [*shlex.split(os.environ.get('CXX', 'c++')), '-std=c++17', '-O2']
-    includes = ['-I' + str(Path(build['prefix']) / 'include'), '-I' + str(ROOT / 'cpp/include')]
-    link_pythia = ['-L' + build['libdir'], '-Wl,-rpath,' + build['libdir'], '-lpythia8']
+    compiler, includes, link_pythia = toolchain(build)
     subprocess.run([*compiler, str(ROOT / 'tools/decay_worker.cc'), includes[0], *link_pythia,
                     '-o', str(runtime / 'exhad-decay')], check=True)
     subprocess.run([*compiler, str(ROOT / 'tools/shower_worker.cc'),

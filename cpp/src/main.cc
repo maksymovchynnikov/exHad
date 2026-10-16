@@ -258,7 +258,7 @@ static void setStable(Pythia& p, Stage stage) {
 // Every event reseeds all three generators, so no Random:seed is set here.
 // Like Pythia's own PythiaParallel, each instance copies one XML-read
 // database and may be initialized on its own thread.
-static std::unique_ptr<Pythia> makePythia(Stage stage, const RunConfig& rc) {
+static std::unique_ptr<Pythia> makeUninitializedPythia(Stage stage, const RunConfig& rc) {
   static Pythia xml("../share/Pythia8/xmldoc", false);
   auto p = std::make_unique<Pythia>(xml.settings, xml.particleData, false);
   p->readString("ProcessLevel:all = off");
@@ -281,8 +281,13 @@ static std::unique_ptr<Pythia> makePythia(Stage stage, const RunConfig& rc) {
                         "Init:showAllParticleData = off", "Next:numberShowInfo = 0",
                         "Next:numberShowProcess = 0", "Next:numberShowEvent = 0"})
     p->readString(s);
+  return p;
+}
+
+static std::unique_ptr<Pythia> makePythia(Stage stage, const RunConfig& rc) {
+  auto p = makeUninitializedPythia(stage, rc);
   if (!p->init()) throw std::runtime_error("Pythia initialization failed");
-  if (!hadronizer) setStable(*p, stage);
+  if (stage != Stage::HADRONIZER) setStable(*p, stage);
   return p;
 }
 
@@ -290,10 +295,12 @@ struct PythiaChain {
   std::unique_ptr<Pythia> had, dec, chn;
 };
 
-static PythiaChain makeChain(const RunConfig& rc) {
+static PythiaChain makeChain(const RunConfig& rc, bool initializeHad = true) {
   auto dec = std::async(std::launch::async, makePythia, Stage::DECAYER, std::cref(rc));
   auto chn = std::async(std::launch::async, makePythia, Stage::CHANNEL_DECAYER, std::cref(rc));
-  PythiaChain chain{makePythia(Stage::HADRONIZER, rc), dec.get(), chn.get()};
+  PythiaChain chain{initializeHad ? makePythia(Stage::HADRONIZER, rc)
+                                  : makeUninitializedPythia(Stage::HADRONIZER, rc),
+                   dec.get(), chn.get()};
   // A 0^- source resolves K+- K_S pi-+ and K+- K_L pi-+ separately, so the
   // channel decayer evolves K0/K0bar (after init, which re-stabilized them);
   // the full decayer continues that exact event.

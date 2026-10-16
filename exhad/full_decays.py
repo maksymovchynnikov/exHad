@@ -98,7 +98,7 @@ def boson_rates(model, mass, variation):
                     f'scalar/eventcalc_branching_ratios_{SCALARS[model]}.json')
         rows = table(str(DATA / relative))
         if model == 'alp-fermion':
-            # EventCalc's ALP gap rule: on [1.911 GeV, first partonic node) every row is held at that node.
+            # EventCalc's ALP gap rule: on [1.910 GeV, first partonic node) every row is held at that node.
             nodes = rows[0][2][:, 0]
             mass = max(mass, float(nodes[np.searchsorted(nodes, exclusive.START[model])]))
         values = [interpolate(r[2], mass) for r in rows]

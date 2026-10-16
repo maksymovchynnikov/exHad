@@ -88,12 +88,13 @@ int auditVector(const std::vector<std::string>& settings) {
     rc.stopMass = 0.;
     rc.pythiaSets = settings;
     rc.pythiaSets.push_back("HadronLevel:mStringMin=1.0");
-    auto stock = makePythia(Stage::HADRONIZER, rc), kernel = makePythia(Stage::HADRONIZER, rc);
+    auto stock = makePythia(Stage::HADRONIZER, rc), kernel = makeUninitializedPythia(Stage::HADRONIZER, rc);
     auto model = std::make_shared<string_kernel::Model>();
     auto hooks = std::make_shared<string_kernel::Hooks>();
     hooks->flav = &model->flav;
     kernel->setUserHooksPtr(hooks);
-    kernel->setFragmentationPtr(model);
+    hooks->owner = kernel.get();
+    hooks->model = model;
     model->lowMass = true;
     if (!kernel->init()) throw std::runtime_error("string kernel initialization failed");
     string_kernel::certify(*kernel, mass, false, false);
@@ -286,12 +287,13 @@ int main(int argc, char** argv) {
       RunConfig source = rc;
       source.decay = glue?DecayMode::GG:DecayMode::QQ;
       source.comp = glue?VComponent::GLUE:VComponent::STRANGE;
-      auto stock = makePythia(Stage::HADRONIZER, source), kernel = makePythia(Stage::HADRONIZER, source);
+      auto stock = makePythia(Stage::HADRONIZER, source), kernel = makeUninitializedPythia(Stage::HADRONIZER, source);
       auto model = std::make_shared<string_kernel::Model>();
       auto hooks = std::make_shared<string_kernel::Hooks>();
       hooks->flav = &model->flav;
       kernel->setUserHooksPtr(hooks);
-      kernel->setFragmentationPtr(model);
+      hooks->owner = kernel.get();
+      hooks->model = model;
       if (!kernel->init()) throw std::runtime_error("string kernel initialization failed");
       for (int i = 1; i <= 20000; ++i) for (Pythia* p:{stock.get(), kernel.get()}) {
         exhad_rng::initialize(p->rndm, i);

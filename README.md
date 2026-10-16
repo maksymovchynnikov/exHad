@@ -9,7 +9,8 @@ For each decay, exHad returns the identities and four-momenta of all final
 particles in the rest frame of the decaying particle; exHad does not simulate
 the production of these particles or their decay positions. A simulation
 program boosts these particles to the laboratory frame, and programs that use
-Pythia8 can call exHad as a Pythia decay handler.
+[Pythia8](https://pythia.org) ([source](https://gitlab.com/Pythia8/releases))
+can call exHad as a Pythia decay handler.
 [EventCalc-SHiP](https://github.com/maksymovchynnikov/EventCalc-SHiP) contains a
 working integration. The physics of each particle and of its decays is described in
 [`docs/PHYSICS.md`](docs/PHYSICS.md).
@@ -22,9 +23,9 @@ interface and with the command-line option `--model`. These calculations and
 measurements give two kinds of rate. The first is the width of a single
 exclusive channel, a decay into a fixed set of hadrons such as
 $`\pi^+\pi^-\pi^0`$. The second is an inclusive width: the width of a
-decay into a quark–antiquark pair or a gluon pair, for `dark-photon` and `b-l`
+decay into a quark-antiquark pair or a gluon pair, for `dark-photon` and `b-l`
 also the width into charmed hadrons, and for `hnl` the width of a decay into a
-charged lepton or a neutrino together with a quark–antiquark pair. An inclusive
+charged lepton or a neutrino together with a quark-antiquark pair. An inclusive
 width fixes how often such a decay happens and says nothing about which hadrons
 come out. Above a mass that depends on the particle, both kinds contribute to
 the hadronic width at once: exHad generates the hadrons of the inclusive part
@@ -33,11 +34,11 @@ and fixes their composition, following the decay model described in
 
 | Particle model | Decaying particle | Calculations and measurements of the exclusive and inclusive decay rates | Masses at which exHad generates decays |
 |---|---|---|---|
-| `dark-photon` | Dark photon $`A'`$, a vector boson coupled to the electromagnetic current | Exclusive hadronic widths from the form factors of [arXiv:1801.04847](https://arxiv.org/abs/1801.04847) and [arXiv:2201.01788](https://arxiv.org/abs/2201.01788); the width into hadrons made of $`u`$, $`d`$ and $`s`$ quarks from perturbative QCD to fourth order in the strong coupling, as in arXiv:2201.01788; from 2 GeV the widths of seven multipion and $`K\bar K\pi\pi`$ final states from fits to BaBar and BESIII cross sections; the width into charmed hadrons from the hadronic $`e^+e^-`$ cross section measured by BES, divided among the final states measured by BaBar and BESIII | 0.003–5 GeV |
-| `b-l` | Gauge boson $`Z'`$ coupled to the difference between baryon number and lepton number | Exclusive hadronic widths from the quark flavour decomposition of the form factors of [arXiv:1801.04847](https://arxiv.org/abs/1801.04847), [arXiv:1911.11147](https://arxiv.org/abs/1911.11147) and [arXiv:2201.01788](https://arxiv.org/abs/2201.01788); the width into hadrons made of $`u`$, $`d`$ and $`s`$ quarks from the QCD corrections to fourth order in the strong coupling of arXiv:2201.01788; the width into charmed hadrons from that of `dark-photon`, scaled by the squared ratio of the charm quark charges under the two currents | 0.001–5 GeV |
-| `alp-fermion` | Axion-like particle $`a`$ coupled at the scale $`\Lambda = 1`$ TeV to the axial currents of all fermions with equal strength and with zero coupling to gluons | Exclusive hadronic widths and the widths into gluon, strange quark, charm quark and nucleon pairs of [arXiv:2501.04525](https://arxiv.org/abs/2501.04525) | 0.01–5 GeV |
-| `scalar-central`, `scalar-lower`, `scalar-upper`, `scalar-1809` | Scalar $`S`$ that mixes with the Higgs boson | Four calculations of the hadronic widths of one particle. `scalar-central`, `scalar-lower` and `scalar-upper` take the dispersive calculation of the pion and kaon form factors of [arXiv:2407.13587](https://arxiv.org/abs/2407.13587), as the mean of its Monte Carlo sample of widths and one standard deviation below and above that mean; `scalar-1809` takes the calculation of [arXiv:1809.01876](https://arxiv.org/abs/1809.01876) with the corrections and additional channels of [arXiv:1904.10447](https://arxiv.org/abs/1904.10447). The four differ in the widths into $`\pi\pi`$ and $`K\bar K`$ ([`docs/PHYSICS.md`](docs/PHYSICS.md#hadronic-widths-of-the-four-input-calculations)) | 0.01–63 GeV |
-| `hnl` | Heavy neutral lepton $`N`$, a Majorana fermion that mixes with the three Standard Model neutrinos | Decay widths and matrix elements of [arXiv:1805.08567](https://arxiv.org/abs/1805.08567), with the exclusive channels matched to the inclusive quark-level widths separately for each weak current, quark flavour combination and mixing flavour | 0.02–40 GeV |
+| `dark-photon` | Dark photon $`A'`$, a vector boson coupled to the electromagnetic current | Exclusive hadronic widths from the form factors of [arXiv:1801.04847](https://arxiv.org/abs/1801.04847) and [arXiv:2201.01788](https://arxiv.org/abs/2201.01788); the width into hadrons made of $`u`$, $`d`$ and $`s`$ quarks from perturbative QCD to fourth order in the strong coupling, as in arXiv:2201.01788; from 2 GeV the widths of seven multipion and $`K\bar K\pi\pi`$ final states from fits to BaBar and BESIII cross sections; the width into charmed hadrons from the hadronic $`e^+e^-`$ cross section measured by BES, divided among the final states measured by BaBar and BESIII | 0.003 to 5 GeV |
+| `b-l` | Gauge boson $`Z'`$ coupled to the difference between baryon number and lepton number | Exclusive hadronic widths from the quark flavour decomposition of the form factors of [arXiv:1801.04847](https://arxiv.org/abs/1801.04847), [arXiv:1911.11147](https://arxiv.org/abs/1911.11147) and [arXiv:2201.01788](https://arxiv.org/abs/2201.01788); the width into hadrons made of $`u`$, $`d`$ and $`s`$ quarks from the QCD corrections to fourth order in the strong coupling of arXiv:2201.01788; the width into charmed hadrons from that of `dark-photon`, scaled by the squared ratio of the charm quark charges under the two currents | 0.001 to 5 GeV |
+| `alp-fermion` | Axion-like particle $`a`$ coupled at the scale $`\Lambda = 1`$ TeV to the axial currents of all fermions with equal strength and with zero coupling to gluons | Exclusive hadronic widths and the widths into gluon, strange quark, charm quark and nucleon pairs of [arXiv:2501.04525](https://arxiv.org/abs/2501.04525) | 0.01 to 5 GeV |
+| `scalar-central`, `scalar-lower`, `scalar-upper`, `scalar-1809` | Scalar $`S`$ that mixes with the Higgs boson | Four calculations of the hadronic widths of one particle. `scalar-central`, `scalar-lower` and `scalar-upper` take the dispersive calculation of the pion and kaon form factors of [arXiv:2407.13587](https://arxiv.org/abs/2407.13587), as the mean of its Monte Carlo sample of widths and one standard deviation below and above that mean; `scalar-1809` takes the calculation of [arXiv:1809.01876](https://arxiv.org/abs/1809.01876) with the corrections and additional channels of [arXiv:1904.10447](https://arxiv.org/abs/1904.10447). The four differ in the widths into $`\pi\pi`$ and $`K\bar K`$ ([`docs/PHYSICS.md`](docs/PHYSICS.md#hadronic-widths-of-the-four-input-calculations)) | 0.01 to 63 GeV |
+| `hnl` | Heavy neutral lepton $`N`$, a Majorana fermion that mixes with the three Standard Model neutrinos | Decay widths and matrix elements of [arXiv:1805.08567](https://arxiv.org/abs/1805.08567), with the exclusive channels matched to the inclusive quark-level widths separately for each weak current, quark flavour combination and mixing flavour | 0.02 to 40 GeV |
 
 *The scalar models* means `scalar-central`, `scalar-lower`, `scalar-upper` and
 `scalar-1809`. The complete list of the calculations and measurements behind
@@ -55,6 +56,21 @@ or a neutrino together with hadrons, from 0.135 GeV ($`\pi^0\nu`$).
 
 A request at a mass outside these ranges stops with an error; exHad does not
 extrapolate decay rates or final states.
+
+Inelastic dark matter is available through the separate
+[Python interface below](#inelastic-dark-matter). It describes the decay of an
+excited dark fermion into a lighter dark fermion and visible particles through
+an off-shell dark photon. Its range is specified by the mass splitting.
+
+## Known bugs/problems
+
+For `alp-fermion`, the input squared matrix elements from the calculation of
+[arXiv:2501.04525](https://arxiv.org/abs/2501.04525) can be negative in physical
+phase space for $`\pi^+\pi^-\pi^0`$, $`3\pi^0`$ and $`K^+K^-\pi^0`$.
+exHad samples these three channels using the absolute value, `Abs(...)`, of
+the input expression. This produces nonnegative sampling weights but leaves
+the problem in the source squared matrix elements unresolved. The tabulated
+lifetimes and branching fractions are unchanged.
 
 ## Installation
 
@@ -76,28 +92,12 @@ python -m pip install -e .
 python tools/setup.py --pythia8-dir /absolute/path/to/pythia8317
 ```
 
-`tools/setup.py` performs four steps, which can also be run one by one; the
-option `--jobs N` sets the number of parallel compiler processes (default 4).
-
-1. `python tools/fetch_inputs.py` downloads, at a fixed version, the program
-   [DeLiVeR](https://github.com/preimitz/DeLiVeR) of arXiv:2201.01788, which
-   computes the hadronic form factors of vector currents, into `external/`. The
-   tables of [ReD-DeLiVeR](https://github.com/anafoguel/ReD-DeLiVeR) that exHad
-   uses are part of `data/` and are not downloaded
-   ([`THIRD_PARTY.md`](THIRD_PARTY.md)). Event generation needs no network
-   access.
-2. `make -C cpp PYTHIA8_DIR=/absolute/path/to/pythia8317` builds `cpp/exhad`,
-   the program that generates Pythia events for exHad. The build stops for any
-   Pythia version other than 8.317.
-3. `make -C cpp check` generates one event to check that the program links to
-   the Pythia library and reads the Pythia8.317 data files.
-4. `python tools/configure.py` builds the programs `.runtime/exhad-decay`, which
-   decays unstable particles, and `.runtime/exhad-shower`, which generates the
-   parton shower description, and the accelerated sampler
-   `.runtime/accelerator/exhad-batch` ([`docs/SAMPLING.md`](docs/SAMPLING.md)).
-   It tests them against the installed Pythia library and writes
-   `.runtime/current.json`. This step takes about a minute. If a test fails, the
-   step fails, and exHad generates no events.
+The setup downloads the vector-current form-factor code
+[DeLiVeR](https://github.com/preimitz/DeLiVeR), builds the Pythia generators and
+the accelerated sampler, and checks their compatibility with Pythia8.317.
+Event generation needs no network access. `--jobs N` sets the number of parallel
+compiler processes (default 4). The individual build commands are documented in
+[`tools/README.md`](tools/README.md).
 
 If you move the exHad directory, create the Python environment again, since the
 installation with `pip install -e` records the absolute path. If you move or
@@ -162,9 +162,38 @@ with Generator("hnl") as generator:
 
 The methods of `Generator`, the weighted samples of `alp-fermion`, the branching
 ratios and lifetimes returned by `model_info`, and `hadronize_hnl`, which forms
-the hadrons of an `hnl` decay whose lepton and quark–antiquark pair a simulation
+the hadrons of an `hnl` decay whose lepton and quark-antiquark pair a simulation
 program has already sampled, are described in
 [`docs/INTERFACES.md`](docs/INTERFACES.md#python-interface).
+
+### Inelastic dark matter
+
+```python
+from exhad.inelastic_dark_matter import generate, ctau
+
+sample = generate(mediator=20.0, count=1000, ratio=3.0, delta=0.1,
+                  alpha_D=0.1, seed=12345)
+decay_length_m = ctau(20.0, epsilon2=1e-8, ratio=3.0, delta=0.1, alpha_D=0.1)
+```
+
+All masses are in GeV. These parameters give a dark-photon mediator mass of
+20 GeV, a lighter dark-fermion mass of `20/3` GeV, and an excited mass 10%
+higher. `alpha_D` is the dark fine-structure constant and `epsilon2` is the
+squared kinetic mixing, defined through the interaction in
+[Inelastic dark matter](docs/PHYSICS.md#inelastic-dark-matter).
+`ctau` returns the excited fermion's proper decay length in metres.
+
+The mass splitting must lie above the electron-pair threshold and below
+1.7 GeV; the mediator must be heavier than the splitting. The calculation
+assumes an unpolarized excited fermion. Its exclusive channels and momentum
+distributions are described in the same physics section.
+
+`sample["particles"]` contains the complete rest-frame decays, including the
+invisible lighter fermion (PDG code 4900101), with fields
+`[px, py, pz, E, mass, PDG]`. Arrays are padded; discard rows with PDG `-999`.
+`sample["q"]` gives the visible-system invariant mass and `sample["channel"]`
+its channel label. Request these decays through the functions in
+`exhad.inelastic_dark_matter`; the interface is Python-only.
 
 ### C++ and Pythia8
 
@@ -226,7 +255,8 @@ except muons, charged pions, charged kaons, $`K^0_L`$ mesons and neutrons, which
 are left undecayed so that a detector simulation can transport them. Neutrinos
 are included.
 
-**HepMC3 and HepMC2 ASCII.** exHad writes these through pyhepmc, which it
+**HepMC3 and HepMC2 ASCII.** exHad writes these through
+[pyhepmc](https://scikit-hep.org/pyhepmc/), which it
 installs as a dependency:
 
 ```bash
@@ -252,20 +282,10 @@ The fields of each file and the labels of the decay channels are described in
 python -m unittest discover -s tests -v
 ```
 
-`tests/test_units.py` and `tests/test_particle_data.py` need no Pythia build.
-With a configured installation, `tests/test_physics.py`, which takes about two
-minutes, checks for every model that the final particles have finite momenta,
-lie on their mass shell and conserve four-momentum. It also checks that a seed
-reproduces the same events after other requests; that a request gives the same
-events for any number of worker processes; that `hadronize_hnl` returns the
-lepton unchanged, hadrons with the invariant mass of the quark–antiquark pair,
-and mirrored events for charge conjugate decays; that the `alp-fermion` decays
-into charmed hadrons obey the quantum number restrictions; that the branching
-ratios of all decay channels add up to one; that the C++ interface gives the
-same events as Python; and that a fixed set of requests reproduces stored event
-checksums. These tests check the installation and the reproducibility of the
-events. The accuracy of the decays is described in
-[`docs/PHYSICS.md`](docs/PHYSICS.md).
+The tests check finite, on-shell momenta, conservation laws and reproducibility
+with a fixed seed. Their coverage and the sampler comparisons are recorded in
+[`tests/README.md`](tests/README.md). Physical accuracy and limitations are
+described in [`docs/PHYSICS.md`](docs/PHYSICS.md).
 
 ## Documentation
 
@@ -274,15 +294,11 @@ events. The accuracy of the decays is described in
 - [`docs/INTERFACES.md`](docs/INTERFACES.md): the parameters of a request, the
   command line, the Python and C++ interfaces, the output files and the use of
   exHad decays in a simulation program.
-- [`docs/SAMPLING.md`](docs/SAMPLING.md): how events are drawn, the accelerated
-  sampler and its tests.
+- [`docs/SAMPLING.md`](docs/SAMPLING.md): how events are drawn and the accelerated
+  sampler.
+- [`tests/README.md`](tests/README.md): test coverage and sampler validation.
 - [`THIRD_PARTY.md`](THIRD_PARTY.md): the downloaded programs and the numerical
   inputs, with their licenses.
-
-The repository contains the Python package `exhad/`, the Pythia program `cpp/`
-and its C++ interface `include/exhad/`, the installation scripts `tools/`, the
-numerical inputs `data/`, the example programs `examples/`, the tests `tests/`
-and the programs and configuration `.runtime/` created by `tools/configure.py`.
 
 ## Citation and license
 

@@ -69,7 +69,7 @@ same hadronic width, in both kinds of sample.
 nonhadronic channels of each model and their widths.
 
 For `hnl`, [`hadronize_hnl`](#hnl-decays-sampled-by-the-simulation-program-hadronize_hnl) forms
-the hadrons in decays into a lepton and a quark–antiquark pair that the simulation program
+the hadrons in decays into a lepton and a quark-antiquark pair that the simulation program
 samples itself.
 
 ### Squared mixings of `hnl`
@@ -87,10 +87,10 @@ three finite nonnegative numbers for every model and uses their values only for 
 A variation selects the central model, `central`, or a version with changed parameters of its
 hadronic final states: `p-low`, `p-high` and `saturation-off` for `alp-fermion`, the scalar
 models, `b-l` and `hnl`, and `coefficient-eigenmode-NN-plus` and `coefficient-eigenmode-NN-minus`
-with NN = 01–31 for `dark-photon`. [PHYSICS.md](PHYSICS.md#model-variations) states what each
+with NN = 01 to 31 for `dark-photon`. [PHYSICS.md](PHYSICS.md#model-variations) states what each
 variation changes and which quantities it leaves unchanged.
 
-Below the mass at which string fragmentation begins (1.70 GeV for `dark-photon`, 1.911 GeV for
+Below the mass at which string fragmentation begins (1.70 GeV for `dark-photon`, 1.910 GeV for
 `alp-fermion`, 2.00 GeV for the scalar models and `b-l`) the hadronic decays are the tabulated
 exclusive channels, of which no variant exists: a request there with any variation other than
 `central` stops with an error that names the mass and the variation.
@@ -115,7 +115,7 @@ always use the rejection sampler. The two samplers give the same channel probabi
 statistical precision of the tabulated Pythia probabilities, and identical distributions within
 each charge combination
 ([derivation](SAMPLING.md#accelerated-generation-of-unweighted-events) and
-[statistical comparisons](SAMPLING.md#statistical-comparisons-with-the-rejection-sampler)).
+[statistical comparisons](../tests/README.md#statistical-comparisons-with-the-rejection-sampler)).
 
 ## Command line
 
@@ -163,7 +163,7 @@ leaving its `with` block closes it. One `Generator` serves one thread.
 | `generate(mass, events, *, seed=1, mixing=None)` | List of the decays that contain hadrons, each a list of particles in the format of [Output formats](../README.md#output-formats): the hadronic decays of a boson portal, and the semileptonic decays of `hnl` (a charged lepton or a neutrino together with hadrons), which requires `mixing`. |
 | `generate_all(mass, events, *, seed=1, mixing=None, weighted=False, weight_floor_fraction=0.)` | Dictionary with the decays in `events`, the [label of the decay channel](#labels-of-decay-channels) of each decay in `channel_labels`, and `decay_scope` equal to `"all"`. `mixing` is required for `hnl`. With `weighted=True`, the dictionary also contains the [weight fields](#weighted-alp-fermion-samples). |
 | `generate_weighted(mass, events, *, seed=1, weight_floor_fraction=0.)` | Dictionary with weighted hadronic decays of `alp-fermion` in `events` and their [weight fields](#weighted-alp-fermion-samples) |
-| `hadronize_hnl(mass, pdgs, primary_events, *, seed=1)` | List of decays in which exHad has replaced the quark–antiquark pair by hadrons; only for `Generator("hnl")` ([`hadronize_hnl`](#hnl-decays-sampled-by-the-simulation-program-hadronize_hnl)) |
+| `hadronize_hnl(mass, pdgs, primary_events, *, seed=1)` | List of decays in which exHad has replaced the quark-antiquark pair by hadrons; only for `Generator("hnl")` ([`hadronize_hnl`](#hnl-decays-sampled-by-the-simulation-program-hadronize_hnl)) |
 | `close()` | Stops the worker processes |
 
 Arguments that the calling process checks raise `ValueError`: an unknown model name, a number of
@@ -216,7 +216,7 @@ and run from the exHad directory, here with a Pythia installation in `/absolute/
 ```bash
 cmake -S . -B build-client -DEXHAD_BUILD_EXAMPLE=ON -DPYTHIA8_DIR=/absolute/path/to/pythia8
 cmake --build build-client
-build-client/pythia8_decays "$PWD" "$PWD/.venv/bin/python" \
+build-client/pythia8_decays "$`PWD" "`$PWD/.venv/bin/python" \
   /absolute/path/to/pythia8/share/Pythia8/xmldoc
 ```
 
@@ -389,7 +389,7 @@ the requested events by events of
 
 - Requests fail at masses outside the ranges of decay generation in the model table of the
   [README](../README.md), and in the narrow intervals of mass, or of the invariant mass $`W`$ of the
-  quark–antiquark pair of an `hnl` decay, named in the sections of the models in
+  quark-antiquark pair of an `hnl` decay, named in the sections of the models in
   [PHYSICS.md](PHYSICS.md).
 - Python raises `ValueError` or `RuntimeError` ([Python interface](#python-interface)). After a
   `RuntimeError` that reports a failed or exited worker process, or after an interrupted request
@@ -505,11 +505,11 @@ weighted sample.
 
 ## Using exHad decays in a simulation program
 
-exHad returns the decay products of a particle at rest. The production of the particle, its
-lifetime, its decay position and the detector response are computed by the simulation program
-([PHYSICS.md](PHYSICS.md#scope-of-the-description)), which places the decays in the laboratory,
-takes the branching ratios and lifetimes of the model from `model_info` and, for `hnl`, can let
-exHad form the hadrons of decays that the program samples itself.
+exHad returns the decay products of a particle at rest. The simulation program
+handles production, samples decay positions from the lifetime and applies the
+detector response ([PHYSICS.md](PHYSICS.md#scope-of-the-description)). It can
+read the rate and lifetime inputs through `model_info` and, for `hnl`, let
+exHad form the hadrons of decays that it samples itself.
 
 ### Decays in the laboratory frame
 
@@ -525,45 +525,46 @@ transport.
 ### Branching ratios, lifetimes and mass intervals: `model_info`
 
 `exhad.model_info(model)` returns, without starting a worker process, a dictionary with the paths of
-the tables of branching ratios and of decay lengths or total widths of a model, from which a
+the tables of branching ratios, partial widths, decay lengths or total widths of a model, from which a
 simulation program takes the rates with which it selects decays.
 
 | Key | Content |
 |---|---|
 | `model` | Model name |
 | `mother_pdg` | PDG identifier that exHad writes for the decaying particle unless the program gives its own ([Output formats](../README.md#output-formats)) |
-| `support_gev` | Mass interval `[lower, upper]` in GeV, with a meaning that differs between the models and is given below the table: for a boson portal, the interval in which exHad forms the hadrons of a decay by fragmenting a quark–antiquark pair or a gluon pair; for `hnl`, the masses of $`N`$ whose decays the descriptions at a given invariant mass of the quark–antiquark pair cover |
+| `support_gev` | Mass interval `[lower, upper]` in GeV, with a meaning that differs between the models and is given below the table: for a boson portal, the interval in which exHad forms the hadrons of a decay by fragmenting a quark-antiquark pair or a gluon pair; for `hnl`, the masses of $`N`$ whose decays the descriptions at a given invariant mass of the quark-antiquark pair cover |
 | `generation_gev` | Mass intervals `[lower, upper]` in GeV of decay generation: `all` for samples of all decay channels, and for samples of the decays that contain hadrons `hadronic` (a boson portal) or `semileptonic` (`hnl`), as in the model table of the [README](../README.md) |
 | `exclusive_gev` | Mass interval `[lower, upper]` in GeV, up to the lower end of `support_gev`, in which every hadronic decay is one of the separately calculated exclusive channels. `hnl`, whose exclusive channels are part of its tables, has no such key. |
 | `exclusive_rows` | Those exclusive channels, each with its name in the table (`label`) and the sorted PDG codes of its final particles (`pdg_signature`) |
-| `tables` | Absolute paths of the tables of the model: `decay` for the branching ratios (`dark-photon`, `alp-fermion`, the scalar models, `hnl`), `ctau` for the decay length $`c\tau`$ (`dark-photon`, the scalar models) and `widths` for the total widths (`hnl`). `b-l` has none of these tables. |
+| `tables` | Absolute paths: `decay` for branching ratios (`dark-photon`, `alp-fermion`, the scalar models, `hnl`) or exclusive hadronic partial widths (`b-l`); `ctau` for coupling-normalized decay lengths (`dark-photon`, `alp-fermion`, the scalar models); `widths` for total widths (`hnl`); `low_mass` for the normalization and matching parameters of the `b-l` exclusive calculation. Units and formats are given below. |
 
 The ends of `support_gev` differ between the models.
 
 - Its lower end is the mass at which exHad begins to form the hadrons by fragmentation: 1.70 GeV
-  for `dark-photon`, 1.911 GeV for `alp-fermion` and 2.00 GeV for `b-l` and the scalar models. It
+  for `dark-photon`, 1.910 GeV for `alp-fermion` and 2.00 GeV for `b-l` and the scalar models. It
   is the upper end of `exclusive_gev`, and below it every hadronic decay is one of the exclusive
   channels of `exclusive_rows`
   ([PHYSICS.md](PHYSICS.md#exclusive-decays-below-the-masses-of-string-fragmentation)).
-- Its upper end is the highest mass at which exHad generates decays of the model: 5.00 GeV for
-  `dark-photon`, `b-l` and `alp-fermion`, and 63.0 GeV for the scalar models. It is the upper end
-  of both intervals of `generation_gev`, and a request above it stops with an error.
+- For bosons, its upper end is also the upper end of `generation_gev`, as listed
+  in the README model table. A request above it stops with an error.
 - The description that forms the hadrons inside the interval depends on the model and on the mass.
   `dark-photon` and `b-l` use the constrained fragmentation model over the whole interval.
   `alp-fermion` and the scalar models use it up to 4 GeV, take each event from it or from the
   parton shower description between 4 and 5 GeV, and use the parton shower description from 5 GeV
   ([PHYSICS.md](PHYSICS.md#decays-into-quarks-and-gluons-above-4-gev)).
-- For `hnl` the key gives 0.02–5.27 GeV: the masses of $`N`$ for which the invariant mass $`W`$ of
-  the quark–antiquark pair lies, in every decay, within the descriptions that form the hadrons at a
+- For `hnl` the key gives 0.02 to 5.27 GeV: the masses of $`N`$ for which the invariant mass $`W`$ of
+  the quark-antiquark pair lies, in every decay, within the descriptions that form the hadrons at a
   given $`W`$; those descriptions reach $`W`$ = 5.27 GeV. Each of them follows $`W`$, so the upper
-  end bounds $`W`$ alone: exHad generates `hnl` decays at every mass of `generation_gev`, to 40 GeV,
+  end bounds $`W`$ alone: exHad generates `hnl` decays throughout `generation_gev`,
   and its channels with a $`b`$ quark open at 5.42 GeV
-  ([PHYSICS.md](PHYSICS.md#hadrons-from-the-quarkantiquark-pair-at-invariant-mass-w)).
+  ([PHYSICS.md](PHYSICS.md#hadrons-from-the-quark-antiquark-pair-at-invariant-mass-w)).
 
 Take the mass interval of a request from `generation_gev`, for every model.
 
-The units of the `ctau` and `widths` tables and the couplings to which they refer are given with the
+The units of the lifetime and width tables and the couplings to which they refer are given with the
 interaction of each model in PHYSICS.md: [`dark-photon`](PHYSICS.md#dark-photon-dark-photon),
+[`b-l`](PHYSICS.md#bl-gauge-boson-b-l),
+[`alp-fermion`](PHYSICS.md#alp-coupled-to-fermions-alp-fermion),
 [the scalar models](PHYSICS.md#scalars-mixing-with-the-higgs-boson-scalar-central-scalar-lower-scalar-upper-scalar-1809)
 and [`hnl`](PHYSICS.md#heavy-neutral-lepton-hnl).
 
@@ -577,6 +578,13 @@ and $`\tau`$. In an `hnl` entry whose neutrino has the flavour of the mixing, th
 neutrino as $`\nu_e`$ for all three flavours, and the branching ratio includes the charge conjugate
 decay. [PHYSICS.md](PHYSICS.md#numerical-inputs) describes how exHad evaluates the tables at the
 requested mass.
+
+For `b-l`, the third field instead contains `[mass, partial width]` nodes:
+each width is $`\Gamma_F/g_{B-L}^2`$ in GeV for one exclusive hadronic channel.
+The filename `eventcalc_branching_ratios.json` also applies to this table,
+so its units must be selected by model. The `low_mass` file records the mass
+grid, thresholds and normalization parameters used to join these channels to
+the inclusive width.
 
 For `alp-fermion` and the scalar models, the dictionary contains two further keys.
 
@@ -611,13 +619,16 @@ The branching ratios of exHad's samples of all decay channels relate to these ta
   most 9% in either direction. A simulation program that selects hadronic decays with this table
   therefore obtains a hadronic fraction that differs from the one of exHad's samples of all decay
   channels.
-- For `b-l`, `model_info` gives no branching ratios, and the branching ratios of exHad enter only its
-  samples of all decay channels.
+- For `b-l`, `model_info` exposes the exclusive partial widths below 2 GeV.
+  Samples of all decay channels combine the hadronic calculation with the
+  analytic charged-lepton and neutrino widths, then divide by their sum
+  ([PHYSICS.md](PHYSICS.md#nonhadronic-channels-and-their-widths)). The partial-width
+  table alone therefore does not specify the full branching ratios.
 
 ### `hnl` decays sampled by the simulation program: `hadronize_hnl`
 
 `Generator("hnl").hadronize_hnl(mass, pdgs, primary_events, *, seed=1)` forms the hadrons from the
-quark–antiquark pair of `hnl` decays whose primary decay products the simulation program has
+quark-antiquark pair of `hnl` decays whose primary decay products the simulation program has
 sampled, and returns the charged lepton or neutrino of each decay unchanged.
 
 This method serves simulation programs that compute the widths and the momenta of the primary decay
@@ -637,7 +648,7 @@ and the lepton flavour.
   masses in GeV in the rest frame of $`N`$. exHad does not use the charge and stability entries.
 - exHad checks that the PDG codes agree with `pdgs`, that energies and masses are nonnegative, that
   the four-momenta add up to $`(0, 0, 0, m_N)`$ and that the particles lie on their mass shells.
-- The invariant mass $`W`$ of the quark–antiquark pair must not exceed $`m_N`$ minus the mass of the
+- The invariant mass $`W`$ of the quark-antiquark pair must not exceed $`m_N`$ minus the mass of the
   lepton. It must be at least the lowest $`W`$ at which exHad forms hadrons from the pair: the mass
   of the lightest pair of hadrons that the current can produce (for example $`\pi^+\pi^0`$ for
   $`u\bar d`$), or, for the neutral currents into $`c\bar c`$ and $`b\bar b`$ and the charged
@@ -646,13 +657,13 @@ and the lepton flavour.
   hadrons.
 - Each returned event starts with the lepton or neutrino, whose six numbers
   `[px, py, pz, E, mass, PDG]` are those of the input, followed by the hadrons. The four-momenta of
-  the hadrons add up to the four-momentum of the quark–antiquark pair, so their invariant mass is
-  $`W`$. [PHYSICS.md](PHYSICS.md#hadrons-from-the-quarkantiquark-pair-at-invariant-mass-w) describes
+  the hadrons add up to the four-momentum of the quark-antiquark pair, so their invariant mass is
+  $`W`$. [PHYSICS.md](PHYSICS.md#hadrons-from-the-quark-antiquark-pair-at-invariant-mass-w) describes
   the hadrons of each current as functions of $`W`$.
 - A $`\tau`$ lepton is returned undecayed, and the simulation program decays it.
 - Decays into a lepton and one meson, such as $`N \to e^-\pi^+`$, and decays into a lepton and two
   pions are separate channels of the table of `model_info("hnl")`, which the simulation program
-  generates itself. The branching ratios of the decays into a lepton and a quark–antiquark pair in
+  generates itself. The branching ratios of the decays into a lepton and a quark-antiquark pair in
   that table do not include them
   ([PHYSICS.md](PHYSICS.md#decay-channels-and-matching-of-exclusive-and-inclusive-widths)).
 

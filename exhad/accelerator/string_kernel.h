@@ -367,6 +367,16 @@ class Model final : public FragmentationModel {
 // Marks attempts, records their primaries and asks `join` at the final join (true: veto).
 class Hooks final : public UserHooks {
  public:
+  // Pythia 8.317 creates its default fragmentation models during first init.
+  // Installing before init is overwritten; replacing them after init leaves
+  // dangling entries in Pythia's registered PhysicsBase objects. This callback
+  // runs after default creation but before fragmentation-model registration.
+  Pythia* owner = nullptr;
+  std::shared_ptr<Model> model;
+  bool initAfterBeams() override {
+    if (!owner || !model) throw std::runtime_error("missing string-kernel owner/model");
+    return owner->setFragmentationPtr(model);
+  }
   Flav* flav = nullptr;
   double beta = 0.;  // SINGLETS forcing probability
   std::vector<int> primaries;
