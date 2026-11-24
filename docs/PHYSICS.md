@@ -1174,7 +1174,7 @@ currents.
 
 | Quark-antiquark pair | Current | Electron mixing [GeV] | Muon mixing [GeV] | Tau mixing [GeV] |
 |---|---|---|---|---|
-| $`u\bar d`$ | charged | 1.845 to 1.850 | 1.860 to 1.865 | 3.61 to 3.64 |
+| $`u\bar d`$ | charged | 1.335 to 1.340 | 1.360 to 1.365 | 3.13 to 3.16 |
 | $`u\bar s`$ | charged | 1.375 to 1.380 | 1.395 to 1.400 | 2.89 to 2.92 |
 | $`c\bar d`$ | charged | 3.13 to 3.16 | 3.16 to 3.19 | 4.54 to 4.57 |
 | $`c\bar s`$ | charged | 3.52 to 3.55 | 3.55 to 3.58 | 4.87 to 4.90 |

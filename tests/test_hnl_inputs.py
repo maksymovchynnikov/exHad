@@ -12,9 +12,9 @@ class HNLInputs(unittest.TestCase):
         pair = [next(r for r in rows if r[0] == name)
                 for name in ('2Pie', '2Piebar')]
         partials = [gamma*np.interp(1., r[2][:,0], r[2][:,1]) for r in pair]
-        # Independent evaluation of the source's rho-pole formula at 1 GeV.
-        np.testing.assert_allclose(partials, [7.441409825480385e-14]*2, rtol=2e-14)
-        self.assertAlmostEqual(sum(partials)/7.441409825480385e-14, 2.)
+        # Independent evaluation of the source's rho-pole formula at 1 GeV, both charge states together.
+        np.testing.assert_allclose(partials, [7.441409825480385e-14/2]*2, rtol=2e-14)
+        self.assertAlmostEqual(sum(partials)/7.441409825480385e-14, 1.)
 
     def test_strange_current_uses_the_supplied_daughter_masses(self):
         rows, _ = hnl_tables()
